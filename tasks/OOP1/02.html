@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ООП: ЛР02</title>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/darcula.css">
+</head>
+<body>
+
+<section id="header" class="header">
+  <div class="header__content">
+    <div class="header__subject">Проектирование типов. Классы.</div>
+    <div class="header__id">ЛР02</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="task_namespace task__statement">namespace OOP {</div>
+  <div class="task_class task__statement">class LaboratoryWork02 {</div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создаем на Github репозиторий или папку в следующем репозитории <span class="task__inline-code">oop-02</span>, клонируем его, открываем в IDE
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Определить класс, указанный в варианте, содержащий:
+  </div>
+
+  <div class="task__statement">
+    1. не менее трех конструкторов (с параметрами и без, а также с параметрами по умолчанию );
+  </div>
+
+  <div class="task__statement">
+    2. статический конструктор (конструктор типа);
+  </div>
+
+  <div class="task__statement">
+    3. определите закрытый конструктор; предложите варианты его вызова;
+  </div> 
+
+  <div class="task__statement">
+    4. поле - только для чтения (например, для каждого экземпляра сделайте поле только для чтения ID - равно некоторому уникальному номеру
+    (хэшу) вычисляемому автоматически на основе инициализаторов
+    объекта);
+  </div>
+
+  <div class="task__statement">
+    5. поле - константу;
+  </div>
+
+  <div class="task__statement">
+    6. свойства (get, set) – для всех поле класса (поля класса должны быть
+    закрытыми); Для одного из свойств ограните доступ по set;
+  </div>
+
+  <div class="task__statement">
+    7. в одном из методов класса для работы с аргументами используйте ref -
+    и out-параметры;
+  </div>
+
+  <div class="task__statement">
+    8.создайте в классе статическое поле, хранящее количество созданных
+    объектов (инкрементируется в конструкторе) и статический
+    метод вывода информации о классе;
+  </div>
+
+  <div class="task__statement">
+    9. сделайте касс partial;
+  </div>
+
+  <div class="task__statement">
+    10. переопределяете методы класса Object: Equals, для сравнения объектов,
+    GetHashCode; для алгоритма вычисления хэша руководствуйтесь
+    стандартными рекомендациями, ToString – вывода строки –
+    информации об объекте.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создайте несколько объектов вашего типа. Выполните вызов
+конструкторов, свойств, методов, сравнение объекты, проверьте тип
+созданного объекта и т.п
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создайте массив объектов вашего типа. И выполните задание,
+выделенное курсивом в таблице.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создайте и выведите анонимный тип (по образцу вашего класса).
+  </div>
+</section>
+
+<section class="task">
+  <div class="task_switch task__statement"><span class="hljs-keyword">switch</span> (variant) {</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 1:</div>
+    <div class="task__statement task_case_statement">
+      Создать класс Вектор, который содержит массив int, число
+      элементов и переменную состояния. Определить
+      индексатор. В переменную состояния устанавливать код
+      ошибки, при определенной ситуации. Определить методы:
+      сложения и умножения, которые производят эти операции
+      с данными класса вектор и числом int.
+    </div>
+    <div class="task__statement task_case_statement">
+    Создать массив объектов. Вывести:
+      a) список векторов, содержащих 0;
+      b) список векторов с наименьшим модулем.
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 2:</div>
+    <div class="task__statement task_case_statement">
+      Создать класс Airline: Cодержит : Пункт назначения,
+      Номер рейса, Тип самолета, Время вылета, Дни недели.
+      Свойства и конструкторы должны обеспечивать проверку
+      корректности.
+    </div>
+    <div class="task__statement task_case_statement">
+      Создать массив объектов. Вывести:
+      a) список рейсов для заданного пункта назначения;
+      b) список рейсов для заданного дня недели.
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 3:</div>
+    <div class="task__statement task_case_statement">
+      Создать класс Student: id, Фамилия, Имя, Отчество,
+Дата рождения, Адрес, Телефон, Факультет, Курс,
+Группа. Свойства и конструкторы должны обеспечивать
+проверку корректности. Добавить метод расчет возраста
+студента
+    </div>
+    <div class="task__statement task_case_statement">
+      Создать массив объектов. Вывести:
+a) список студентов заданного факультета;
+d) список учебной группы
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 4:</div>
+  <div class="task__statement task_case_statement">
+    Создать класс Customer: id, Фамилия, Имя, Отчество,
+    Адрес, Номер кредитной карточки, баланс. Свойства и
+    конструкторы должны обеспечивать проверку
+    корректности. Добавить методы зачисления и списания
+    сумм на счет.
+  </div>
+  <div class="task__statement task_case_statement">
+    Создать массив объектов. Вывести:
+a) список покупателей в алфавитном порядке;
+b) список покупателей, у которых номер кредитной карточки
+находится в заданном интервале.
+  </div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 5:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Abiturient: id, Фамилия, Имя, Отчество,
+Адрес, Телефон, массив оценок. Свойства и
+конструкторы должны обеспечивать проверку
+корректности. Добавить методы расчёта среднего балла,
+поиска максимального и минимального балла
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список абитуриентов, имеющих неудовлетворительные
+оценки;
+b) список абитуриентов, у которых сумма баллов выше
+заданной;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 6:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Book: id, Название, Автор (ы),
+Издательство, Год издания, Количество страниц, Цена,
+Тип переплета. Свойства и конструкторы должны
+обеспечивать проверку корректности. 
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список книг заданного автора;
+b) список книг, выпущенных после заданного года.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 7:</div>
+<div class="task__statement task_case_statement">
+  Создать класс House: id, Номер квартиры, Площадь,
+Этаж, Количество комнат, Улица, Тип здания, Срок
+эксплуатации. Свойства и конструкторы должны
+обеспечивать проверку корректности. Добавить метод
+расчета возраста задания (необходимость в кап.
+ремонте).
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список квартир, имеющих заданное число комнат;
+b) список квартир, имеющих заданное число комнат и
+расположенных на этаже, который находится в заданном
+промежутке;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 8:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Phone: id, Фамилия, Имя, Отчество,
+Адрес, Номер кредитной карточки, Дебет, Кредит,
+Время городских и междугородных разговоров. Свойства
+и конструкторы должны обеспечивать проверку
+корректности. Добавить метод расчет баланса на
+текущий момент.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) сведения об абонентах, у которых время внутригородских
+разговоров превышает заданное;
+b) сведения об абонентах, которые пользовались
+междугородной связью;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 9:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Car: id, Марка, Модель, Год выпуска, Цвет,
+Цена, Регистрационный номер. Свойства и конструкторы
+должны обеспечивать проверку корректности. Добавить
+метод вывода возраста машины.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+  a) список автомобилей заданной марки;
+  b) список автомобилей заданной модели, которые
+  эксплуатируются больше n лет;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 10:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Product: id, Наименование, UPC,
+Производитель, Цена, Срок хранения, Количество.
+Свойства и конструкторы должны обеспечивать проверку
+корректности. Добавить метод вывода общей суммы
+продукта.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список товаров для заданного наименования;
+b) список товаров для заданного наименования, цена которых
+не превосходит заданную;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 11:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Train: Пункт назначения, Номер поезда,
+Время отправления, Число мест (общих, купе, плацкарт,
+люкс). Свойства и конструкторы должны обеспечивать
+проверку корректности. Добавить метод вывода общего
+числа мест в поезде.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список поездов, следующих до заданного пункта
+назначения;
+b) список поездов, следующих до заданного пункта назначения
+и отправляющихся после заданного часа;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 12:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Bus: Фамилия и инициалы водителя,
+Номер автобуса, Номер маршрута, Марка, Год начала
+эксплуатации, Пробег. Свойства и конструкторы должны
+обеспечивать проверку корректности. Добавить метод
+вывода возраста автобуса.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список автобусов для заданного номера маршрута;
+b) список автобусов, которые эксплуатируются больше
+заданного срока;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 13:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Airline: Пункт назначения, Номер рейса,
+Тип самолета, Время вылета, Дни недели. Свойства и
+конструкторы должны обеспечивать проверку
+корректности.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список рейсов для заданного пункта назначения;
+b) список рейсов для заданного дня недели;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 14:</div>
+<div class="task__statement task_case_statement">
+  Создать класс Стек вещественных. Определить
+индексатор, методы проверки стека, добавления и
+удаления элементов.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) стеки с наименьшим/наибольшим верхним элементом;
+b) список стеков, содержащих отрицательные элементы.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 15:</div>
+<div class="task__statement task_case_statement">
+  Создать класс типа - Множество. Методы: добавляют
+элемент к множеству, удаляют элемент, выводят текущее
+количество элементов множества.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) множества с наименьшей/наибольшей суммой элементов;
+b) список множеств, содержащих отрицательные элементы.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 16:</div>
+<div class="task__statement task_case_statement">
+  Создать класс типа - Дата с полями: день (1-31), месяц (1-
+12), год (целое число). Свойства установки дня, месяца и
+года и конструкторы должны проверять корректность
+задаваемых значений. Добавить методы печати по
+шаблону: “5 января 2018 года” и “05/01/2018”.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список дат для заданного года;
+b) список дат, которые имеют заданное число;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 17:</div>
+<div class="task__statement task_case_statement">
+  Создать класс SuperString. Методы: вывода длины
+строки, проверки существует ли в строке заданный
+символ, замены одного символа в строке на другой.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список строк определенной длины;
+b) список строк, которые содержат заданное слово.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 18:</div>
+<div class="task__statement task_case_statement">
+  Определить класс Булева матрица (BoolMatrix).
+Реализовать методы для логического сложения
+(дизъюнкции), умножения и инверсии матриц.
+Реализовать методы для подсчета числа единиц в
+матрице.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) список матриц с наибольшим/наименьшим количеством
+единиц;
+b) список матриц с равным количеством заданного символа в
+каждой строке
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 19:</div>
+<div class="task__statement task_case_statement">
+  Создать класс типа - Окружность. Поля – координаты
+центра, радиус. Методы вычисляют площадь, длину
+окружности. Свойства должны проверять корректность
+задаваемых параметров.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) группы окружностей, центры которых лежат на одной
+прямой;
+b) наибольший и наименьший по площади (периметру) объект;
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 20:</div>
+<div class="task__statement task_case_statement">
+  Создать класс типа - Прямоугольник. Поля - высота и
+ширина. Методы вычисления площади, периметра,
+Свойства должны проверять корректность задаваемых
+параметров.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) количество четырехугольников разного типа (квадрат,
+прямоугольник, ромб, произвольный)
+b) определить для каждой группы наибольший и наименьший
+по площади (периметру) объект.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 21:</div>
+<div class="task__statement task_case_statement">
+  Определить класс Вектор. Реализовать методы для
+вычисления модуля вектора, скалярного произведения,
+сложения, вычитания, умножения на константу. 
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) вектора с заданным модулем;
+b) определить вектор с наибольшей/наименьшей суммой
+элементов
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 22:</div>
+<div class="task__statement task_case_statement">
+  Построить класс Булев вектор (BoolVector). Реализовать
+методы для выполнения поразрядных конъюнкции,
+дизъюнкции и отрицания векторов, а также подсчета
+числа единиц и нулей в векторе
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) вектора с заданным числом единиц/нулей;
+b) определить и вывести равные вектора.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 23:</div>
+<div class="task__statement task_case_statement">
+  Создать класс типа - Время с полями: часы (0-23), минуты
+(0-59), секунды (0-59). Свойства класса должны проверять
+корректность задаваемых параметров.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) время с заданным числом часов;
+b) список времен по группам: ночь, утро, день, вечер.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 24:</div>
+<div class="task__statement task_case_statement">
+  Создать класс - Одномерный массив целых чисел
+(вектор). Создать индексатор, методы поэлементного
+сложения и вычитания со скалярным значением.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) массивы только с четными/нечетными элементами;
+b) массив с наибольшей суммой элементов.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 25:</div>
+<div class="task__statement task_case_statement">
+  Создать класс – Треугольник, заданного тремя точками
+(Создать класс Point). Методы класса обеспечивают вывод
+на экран координат, рассчитывают длины сторон и
+периметр треугольника.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов.
+a) подсчитать количество треугольников разного типа
+(равносторонний, равнобедренный, прямоугольный,
+произвольный).
+b) определить для каждой группы наибольший и наименьший по
+периметру объект.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 26:</div>
+<div class="task__statement task_case_statement">
+  Создать класс - Множество. Методы класса реализуют
+добавление и удаление элемента, пересечение и
+разность множеств.
+</div>
+<div class="task__statement task_case_statement">
+  Создать массив объектов. Вывести:
+a) множества только с четными/нечетными элементами;
+b) множества, содержащие отрицательные элементы.
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Синхронизируем локальный репозиторий с удаленным (сделаем push на Github)
+  </div>
+</section>
+
+<section class="task task_questions">
+  <div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+      0. Покажите историю коммитов своего репозитория на Github
+    </span>
+  </div>
+
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+  1. Назовите принципы ООП. Поясните каждый из них.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>  
+2. Назовите класс .NET, от которого наследуются все классы.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+3. Охарактеризуйте открытые методы System.Object.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+4. Охарактеризуйте закрытые методы System.Object.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+5. Приведите пример определения класса.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+6. Какие ключевые слова можно использовать при определении класса?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+7. В чем отличие между объектом и классом?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+8. Что такое конструктор? Когда вызывается конструктор?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+9. Перечислите свойства конструктора?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+10. Что такое деструктор (destructor) ?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+11. Что такое this?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+12. В чем разница между равенством и тождеством объектов?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+13. Какие спецификаторы доступа для класса и методов класса существуют в C#?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+14. Опишите модификатор protected internal.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+15. Зачем и как используются ref и out параметры функции?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+16. Приведите пример необязательных и именованных параметров метода.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+17. Приведите пример полей класса – статические, константные, только для чтения.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+18. Приведите пример определения свойств класса. Как свойства связаны с инкапуляцией?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+19. Назовите явное имя параметра, передаваемого в метод set свойства класса?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+20. Что такое автоматические свойства?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+21. Что такое индексаторы класса? Какие ограничения существуют на индексатор?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+22. Что такое перегруженный метод?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+23. Что такое partial класс и какие его преимущества?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+24. Что такое анонимный тип в C#?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+25. Для чего делают статические классы?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+26. В чем отличие статического поля от экземплярного?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+27. Поясните работу статических конструкторов.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+28. Какая разница между поверхностным (shallow) и глубоким (deep) копированием?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+29. Что такое частичные классы и частичные методы?
+    </span></div>
+    <div class="task__statement">
+      <input class="task__checkbox" type="checkbox">
+      <span>
+  30. Что будет выведено в результате выполнения
+  <pre><code class="task__code">
+    class A
+    {
+      private int _num;
+      public A(int num) { Num = num; }
+      public int Num { get { return _num; } set { _num = value; } }
+    }
+    static void Main(string[] args)
+    {
+      A a = new A(5);
+      A b = a;
+      console.WriteLine(a.Num + " " +b.Num);
+    
+      a.Num = 7;
+      console.WriteLine(a.Num + " " + b.Num);
+    }
+  </code></pre>
+      </span></div>
+      <input class="task__checkbox" type="checkbox">
+      <span>
+  31. Что будет выведено в результате выполнения
+  <pre><code class="task__code">
+    class A {
+      static void Main(string[] args)
+      {
+        var age = 15;
+        Type ageType = age.GetType();
+        console.WriteLine(ageType);
+      }
+    }
+  </code></pre>
+      </span></div>
+    </span></div>
+    <input class="task__checkbox" type="checkbox">
+    <span>
+32. Какой из конструкторов задан неверно?
+<pre><code class="task__code">
+  internal class A {
+    public A() {} //1
+    public int A() {} //2
+    public A(int somI) {} //3
+    public A(A somA) {} //4
+  }
+</code></pre>
+    </span></div>
+</section>
+
+<section class="task task_extras">
+  <div class="task__statement">
+    <a
+      class="task__link"
+      target="_blank"
+      href="https://metanit.com/sharp/tutorial/3.1.php"
+      >Metanit (Глава 3. Классы, структуры и пространства имен)</a
+    >
+  </div>
+</section>
+
+<section class="solution">
+  <pre><code class="javascript"></code></pre>
+</section>
+
+<section class="section">
+  <div class="task_class task__statement">}</div>
+  <div class="task_namespace task__statement">}</div>
+</section>
+
+<script src="assets/jquery-3.2.1.min.js"></script>
+<script src="assets/highlight.pack.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
