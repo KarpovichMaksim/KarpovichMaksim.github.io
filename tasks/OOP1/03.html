@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ООП: ЛР03</title>
+  <link rel="stylesheet" href="../assets/fonts.css">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/darcula.css">
+</head>
+<body>
+
+<section id="header" class="header">
+  <div class="header__content">
+    <div class="header__subject">Перегрузка операций, методы расширения и вложенные типы</div>
+    <div class="header__id">ЛР03</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="task_namespace task__statement">namespace OOP {</div>
+  <div class="task_class task__statement">class LaboratoryWork03 {</div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создаем на Github репозиторий или папку в следующем репозитории <span class="task__inline-code">oop-03</span>, клонируем его, открываем в IDE
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создать заданный в варианте класс. Определить в классе необходимые
+    методы, конструкторы, индексаторы и заданные перегруженные
+    операции. Написать программу тестирования, в которой проверяется
+    использование перегруженных операций.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Добавьте в свой класс вложенный объект Owner, который содержит Id,
+имя и организацию создателя. Проинициализируйте его.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Добавьте в свой класс вложенный класс Date (дата создания).
+    Проинициализируйте
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Создайте статический класс StatisticOperation, содержащий 3 метода для
+работы с вашим классом (по варианту п.<br>1): сумма, разница между
+максимальным и минимальным, подсчет количества элементов.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Добавьте к классу StatisticOperation методы расширения для типа string
+и вашего типа из задания No1. См. задание по вариантам.
+  </div>
+</section>
+
+<section class="task">
+  <div class="task_switch task__statement"><span class="hljs-keyword">switch</span> (variant) {</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 1:</div>
+    <div class="task__statement task_case_statement">
+      Класс - Одномерный массив. Дополнительно перегрузить
+следующие операции: * - умножение массивов; true - истина
+если массив не сдержит отрицательных элементов, int() -
+операция приведения – - возвращает размер массива; == -
+проверка на равенство; < - сравнение.
+    </div>
+    <div class="task__statement task_case_statement">
+      Методы расширения:
+      <br>1) Проверка на содержание определённого символа в
+      строке
+      <br>2) Удаление отрицательных элементов
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 2:</div>
+    <div class="task__statement task_case_statement">
+      Класс - Одномерный массив. Дополнительно перегрузить
+следующие операции: - - разность со скалярным значением; >
+- проверка на вхождение элемента; != - проверка на
+неравенство массивов ; + - объединение массивов
+    </div>
+    <div class="task__statement task_case_statement">
+      Методы расширения:
+      <br>1) Удаление гласных из строки
+<br>2) Удаление первых пяти элементов
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 3:</div>
+    <div class="task__statement task_case_statement">
+      Класс - множество Set. Дополнительно перегрузить
+следующие операции: + - добавить элемент в множество (типа set+item); + - объединение множеств; * - пересечение
+множеств; явный int()- мощность множества; false – проверка
+на принадлежность размера массива определенному
+диапазону
+    </div>
+    <div class="task__statement task_case_statement">
+      Методы расширения:
+      <br>1) Добавление занятой после каждого слова
+<br>2) Удаление повторяющихся из м множества
+    </div>
+  <div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+  <div class="task_case task__statement"><span class="hljs-keyword">case</span> 4:</div>
+  <div class="task__statement task_case_statement">
+    Класс - множество Set. Дополнительно перегрузить
+следующие операции: - - удалить элемент из множества
+(типа set-item); * - пересечение множеств; < - сравнение
+множеств; > - проверка на подмножество; &- придумайте использование.
+  </div>
+  <div class="task__statement task_case_statement">
+    Методы расширения:
+    <br>1) Добавление точки в конце строки
+<br>2) Удаление нулевых элементов из множества
+  </div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 5:</div>
+<div class="task__statement task_case_statement">
+  Класс - множество Set. Дополнительно перегрузить
+следующие операции: ->>- удалить элемент из множества
+(типа set-item); > - проверка на подмножество; != - проверка
+множеств на неравенство; << - добавить элемент в множество
+Вариант 5 (типа set+item); %- пересечение множеств.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Поиск самого короткого слова
+  <br>2) Упорядочивание множества
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 6:</div>
+<div class="task__statement task_case_statement">
+  Класс - однонаправленный список List. Дополнительно
+перегрузить следующие операции: >> - удалить элемент в
+заданной позиции + - добавить элемент в заданную позицию,
+например, != - проверка на неравенство множеств. Методы расширения: 
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Поиск самого длинного слова
+<br>2) Удаление последнего элемента из списка
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 7:</div>
+<div class="task__statement task_case_statement">
+  Класс - множество Set. Дополнительно перегрузить
+следующие операции: ++-добавление случайного элемента к множесту, + - объединение множеств; <= - сравнение
+множеств; неявный int()- мощность множества; % - доступ к
+элементу в заданной позиции.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Шифрование строки
+<br>2) Проверка на упорядоченность множества
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 8:</div>
+<div class="task__statement task_case_statement">
+  Класс - множество Set. Дополнительно перегрузить
+следующие операции: > - проверка на принадлежность (типа
+операции in множественного типа)* - пересечение множеств;
+< - проверка на подмножество; явный Date()- приведение типа
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Выделение первого числа, содержащегося в строке
+<br>2) Удаление положительных элементов из множества
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 9:</div>
+<div class="task__statement task_case_statement">
+  Класс - однонаправленный список List. Дополнительно
+перегрузить следующие операции: + - объединить два
+списка; -- - удалить элемент из начала (--list); = = - проверка на
+равенство; true - проверка, пустой ли список.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Выделение последнего числа, содержащегося в строке
+<br>2) Удаление заданного элемента из списка
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 10:</div>
+<div class="task__statement task_case_statement">
+  Класс - список List. Дополнительно перегрузить следующие
+операции: + - добавить элемент в начало (item+list); -- -
+удалить первый элемент из списка (--list); != - проверка на
+неравенство; * - объединение двух списков. Методы расширения:
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества слов с заглавной буквы
+<br>2) Проверка на повторяющиеся элементы в списке
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 11:</div>
+<div class="task__statement task_case_statement">
+  Класс - список List. Дополнительно перегрузить следующие
+операции: + - добавить элемент в конец (list+item); -- -
+удалить элемент из конца (типа list--); != - проверка на
+неравенство; true – проверка упорядоченности элементов.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества слов.
+<br>2) Проверка на нулевые элементы в списке
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 12:</div>
+<div class="task__statement task_case_statement">
+  Класс - однонаправленный список List. Дополнительно перегрузить следующие операции: ! – инверсия элементов;
+  + - объединить два списка; = = - проверка на равенство; < -
+  добавление одного списка к другому.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Усечение строки до заданной длины
+<br>2) Сумма элементов списка
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 13:</div>
+<div class="task__statement task_case_statement">
+  Класс - стек Stack. Дополнительно перегрузить следующие
+операции: + - добавить элемент в стек; -- - извлечь элемент из
+стека; true - проверка, пустой ли стек; > - копирование одного
+стека в другой с сортировкой в возрастающем порядке.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества предложений
+<br>2) Определение среднего элемента стека
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 14:</div>
+<div class="task__statement task_case_statement">
+  Класс - очередь Queue. Дополнительно перегрузить
+следующие операции: + - добавить элемент; -- - извлечь
+элемент; true - проверка, пустая ли очередь; < - копирование
+одной очереди в другую с сортировкой в убывающем порядке; неявный int()- мощность.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Индекс первой точки
+<br>2) Последний элемент очереди
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 15:</div>
+<div class="task__statement task_case_statement">
+  Класс - Bектор. Дополнительно перегрузить следующие
+операции: + - сложение векторов; > - сравнение векторов; = = -
+копирование вектора, true - проверка, пустой ли вектор
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Усечение строки с начала
+<br>2) Удаление положительных элементов из вектора
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 16:</div>
+<div class="task__statement task_case_statement">
+  Класс - Марица. Дополнительно перегрузить следующие
+операции: + - сложение матриц; - - удаление заданной строки;
+> - сравнение матриц по модулю; * - копирование матрицы.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Поиск номера автомобиля в строке (белорусского)
+<br>2) Сумма главной диагонали
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 17:</div>
+<div class="task__statement task_case_statement">
+  Класс - Марица. Дополнительно перегрузить следующие
+операции: - - вычитания числа из всех элементов матрицы; ++
+инкремент всех элементов матрицы; != - сравнение матриц по
+модулю; неявный int() – количество нулевых элементов в матрице.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Сумма целых чисел в сроке
+<br>2) Проверка на квадратность матрицы
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 18:</div>
+<div class="task__statement task_case_statement">
+  Класс - Марица. Дополнительно перегрузить следующие
+операции: + - сложение матриц; -- обнуление всех элементов
+матрицы; == - сравнение матриц по нулевому столбцу; явный
+int() – количество отрицательных элементов в матрице.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Выделение первого числа, содержащегося в строке
+<br>2) Обнуление отрицательных элементов матрицы
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 19:</div>
+<div class="task__statement task_case_statement">
+  Класс - Марица. Дополнительно перегрузить следующие
+операции: < - сравнения матриц; -- приведение матрицы к
+единичному виду; == - сравнение матриц по первому
+элементу; * – инверсия всех элементов матрицы.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Разность двух первых целых чисел строки
+<br>2) Сумма элементов матрицы
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 20:</div>
+<div class="task__statement task_case_statement">
+  Класс - стек Stack. Дополнительно перегрузить следующие
+операции: * - добавить элемент в стек; /- извлечь элемент из
+стека; true - проверка, есть ли в стеке отрицательные
+элементы; == - сравнения стеков.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества вопросительных предложений в
+строке
+<br>2) Проверка на ноль первого элемента
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 21:</div>
+<div class="task__statement task_case_statement">
+  Класс - стек Stack. Дополнительно перегрузить следующие
+операции: - - извлечение всех элементов равных заданному;
+ ++ - дублирование верхнего элемента; < копирование
+неповторяющихся элементов из второго стека.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества восклицательных предложений в
+строке
+<br>2) Проверка стека на наличие отрицательных элементов
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 22:</div>
+<div class="task__statement task_case_statement">
+  Класс - очередь Queue. Дополнительно перегрузить
+следующие операции: / - добавить элемент; ++ - извлечь
+элемент; false - проверка, на содержание четных элементов в
+очереди; явный int()- количество положительных элементов в очереди
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Выделение первого числа, содержащегося в строке
+<br>2) Обнуление отрицательных элементов очереди
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 23:</div>
+<div class="task__statement task_case_statement">
+  Класс - Строка. Дополнительно перегрузить следующие
+операции: < - сравнения строк по длине слов; + добавления
+числа к строке; - удаление последнего символа в строке; * –
+замена всех символов в строке на заданный.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Проверка наличия в строке служебных символов
+<br>2) Удаление знаков препинания из строки
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 24:</div>
+<div class="task__statement task_case_statement">
+  Класс - Строка. Дополнительно перегрузить следующие
+операции: < - удаление всех символов равных заданному; +
+удаление нечетных символов; != сравнение длин строк; true -
+проверка на знаки препинания
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Проверка наличия в строке заданных символов
+<br>2) Удаление чисел их строки
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 25:</div>
+<div class="task__statement task_case_statement">
+  Класс - Строка. Дополнительно перегрузить следующие
+операции: - - удалить элемент из строки из заданной позиции
+(типа string-item); > - проверка на вхождение подстроки; != -
+проверка строк на неравенство; + - добавить элемент в строку на заданную позицию (типа string+item).
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Подсчет количества слов в сроке
+<br>2) Добавление в строке смайликов
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+<div class="task_case task__statement"><span class="hljs-keyword">case</span> 26:</div>
+<div class="task__statement task_case_statement">
+  Класс - Пароль. Дополнительно перегрузить следующиеоперации: - - замена последнего символа (типа password-
+item); > - сравнение длин паролей; != - проверка паролей на
+неравенство; ++ - сброс пароля на значение по умолчанию;
+true - проверка на стойкость.
+</div>
+<div class="task__statement task_case_statement">
+  Методы расширения:
+  <br>1) Выделение среднего символа строки
+<br>2) Проверка допустимой длины пароля (6-12)
+</div>
+<div class="task_case task__statement"><span class="hljs-keyword">break</span>;</div>
+</section>
+
+<section class="task">
+  <div class="task__statement">
+    Синхронизируем локальный репозиторий с удаленным (сделаем push на Github)
+  </div>
+</section>
+
+<section class="task task_questions">
+  <div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+      0. Покажите историю коммитов своего репозитория на Github
+    </span>
+  </div>
+
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+  1. Перечислите свойства внутренних и вложенных классов?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>  
+2. Что такое статический класс и какие у него свойства?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+3. Каково назначение перегрузки операторов?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+4. Как используется ключевое слово operator?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+5. Какие операции нельзя перегружать в C#?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+6. Можно ли перегрузкой отменить очередность выполнения операции?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+7. Истинно ли следующее утверждение: операция >= может быть перегружена.
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+8. Сколько аргументов требуется для определения перегруженной унарной операции?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+9. Можно ли перегружать операцию []?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+10. Можно ли перегружать операцию ->?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+11. Приведите пример оператора приведения типа?
+    </span></div>
+<div class="task__statement">
+    <input class="task__checkbox" type="checkbox">
+    <span>
+12. Что такое метод расширения? Как и где его можно использовать?
+    </span></div>
+    <div class="task__statement">
+      <input class="task__checkbox" type="checkbox">
+      <span>
+  13. Пусть дан фрагмент кода определения оператора преобразования типа.
+  Определить форму преобразования.
+  <pre><code class="task__code">
+    public static implicit operator Point2D(Point3D a)
+{/* код*/;}
+  </code></pre>
+      </span></div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox">
+        <span>
+          32. Выберите верное утверждение. Метод расширения может:
+          <br>1)получать доступ к public членам расширяемого класса
+          <br>2)получать доступ к protected членам расширяемого класса
+          <br>3)получать доступ к internal членам расширяемого класса
+          <br>4)быть объявлен в любом классе
+          <br>5)быть без параметров
+        </span></div>
+        <div class="task__statement">
+          <input class="task__checkbox" type="checkbox">
+          <span>
+            32. Выберите из списка неверное правило перегрузки операторов для C#:
+            <br>1)префиксные операции ++ и – – перегружаются парами
+            <br>2)операции сравнения перегружаются парами: == и != ; < и >;<= и >=
+            <br>3)перегруженные операции обязаны возвращать значения
+            <br>4)должны объявляться как protected
+            <br>5)true и false можно перегружать
+          </span></div>
+    </span></div>
+</section>
+
+<section class="task task_extras">
+  <div class="task__statement">
+    <a
+      class="task__link"
+      target="_blank"
+      href="https://metanit.com/sharp/tutorial/3.36.php"
+      >Metanit (Глава 8. Дополнительные возможности ООП в C#)</a
+    >
+  </div>
+</section>
+
+<section class="solution">
+  <pre><code class="javascript"></code></pre>
+</section>
+
+<section class="section">
+  <div class="task_class task__statement">}</div>
+  <div class="task_namespace task__statement">}</div>
+</section>
+
+<script type="text/javascript" src="../assets/json/third.json"></script>
+<script src="../assets/jquery-3.2.1.min.js"></script>
+<script src="../assets/highlight.pack.js"></script>
+<script src="../assets/script.js"></script>
+</body>
+</html>
