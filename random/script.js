@@ -17,13 +17,13 @@ function randomNum() {
   }
   for (let i = 0; i < countValue; i++) {
     let num = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-    while(numberString.includes(num)) {
-        num = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+    while (numberString.includes(num)) {
+      num = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
     }
-    numberString.push(num)  //+= ` ${num}`;
+    numberString.push(num);
   }
   numberString.sort((a, b) => a - b);
-  document.getElementById("result").innerText = numberString.join(' ');
+  document.getElementById("result").innerText = numberString.join(" ");
 }
 window.addEventListener("load", randomNum());
 generateBtn.addEventListener("click", randomNum);

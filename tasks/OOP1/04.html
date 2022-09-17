@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР04</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">
+          Наследование, полиморфизм, абстрактные классы и интерфейсы
+        </div>
+        <div class="header__id">ЛР04</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork04 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-04</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Определить иерархию и композицию классов (в соответствии с вариантом),
+        реализовать классы. Если необходимо расширьте по своему усмотрению
+        иерархию для выполнения всех пунктов л.р. Каждый класс должен иметь
+        отражающее смысл название и информативный состав. При кодировании должны
+        быть использованы соглашения об оформлении кода code convention. В одном
+        из классов переопределите все методы, унаследованные от Object.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        В проекте должен быть минимум один интерфейс и абстрактный класс.
+        Использовать виртуальные методы и переопределение.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">Сделайте один из классов sealed.</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Добавьте в интерфейсы (интерфейс) и абстрактный класс одноименные
+        методы.
+        <pre><code class="task__code">
+          interface ICloneable {
+              bool DoClone();
+          }
+
+          abstract class BaseClone {
+            public abstract bool DoClone();
+          }
+
+          class UserClass: BaseClone, ICloneable { .... }
+        </code></pre>
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Написать демонстрационную программу, в которой создаются объекты
+        различных классов. Поработать с объектами через ссылки на абстрактные
+        классы и интерфейсы. В этом случае для идентификации типов объектов
+        использовать операторы is или as.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Во всех классах (иерархии) переопределить метод ToString(), который
+        выводит информацию о типе объекта и его текущих значениях.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте дополнительный класс Printer c полиморфным методом IAmPrinting(
+        SomeAbstractClassorInterface someobj). Формальным параметром метода
+        должна быть ссылка на абстрактный класс или наиболее общий интерфейс в
+        вашей иерархии классов. В методе iIAmPrinting определите тип объекта и
+        вызовите ToString(). В демонстрационной программе создайте массив,
+        содержащий ссылки на разнотипные объекты ваших классов по иерархии, а
+        также объект класса Printer и последовательно вызовите его метод
+        IAmPrinting со всеми ссылками в качестве аргументов.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task_switch task__statement">
+        <span class="hljs-keyword">switch</span> (variant) {
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 1:
+      </div>
+      <div class="task__statement task_case_statement">
+        ПО, Набор операций, Текстовый процессор, Word, Вирус , CConficker
+        Игрушка, Сапер, Разработчик.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 2:
+      </div>
+      <div class="task__statement task_case_statement">
+        Геометрическая фигура, Круг, Прямоугольник, Управление (интерфейс с
+        методами show, input, resize и т.д.), Элемент управления, Checktbox,
+        Radiobutton, Button.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 3:
+      </div>
+      <div class="task__statement task_case_statement">
+        Транспортное средство, Управление авто, Машина, Двигатель, Разумное
+        существо, Человек, Трансформер.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 4:
+      </div>
+      <div class="task__statement task_case_statement">
+        Растение, Куст, Цветок, Роза, Гладиолус, Кактус, Бумага, Букет.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 5:
+      </div>
+      <div class="task__statement task_case_statement">
+        Товар, Техника, Печатающее устройство, Сканер, Компьютер, Планшет.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 6:
+      </div>
+      <div class="task__statement task_case_statement">
+        Журнал, Книга, Печатное издание, Учебник, Журнал, Персона, Автор,
+        Издательство.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 7:
+      </div>
+      <div class="task__statement task_case_statement">
+        Испытание, Тест, Экзамен, Выпускной экзамен, Вопрос.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 8:
+      </div>
+      <div class="task__statement task_case_statement">
+        Телевизионная программа, Фильм, Новости, Худ. фильм, Мультфильм,
+        Реклама, Режиссер.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 9:
+      </div>
+      <div class="task__statement task_case_statement">
+        Продукт, Кондитерское изделие, Товар, Цветы, Торт, Часы, Конфеты.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 10:
+      </div>
+      <div class="task__statement task_case_statement">
+        Квитанция, Накладная, Документ, Чек, Дата, Организация.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 11:
+      </div>
+      <div class="task__statement task_case_statement">
+        Автомобиль, Поезд, Транспортное средство, Экспресс, Двигатель, Вагон.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 12:
+      </div>
+      <div class="task__statement task_case_statement">
+        Инвентарь, Скамейка, Брусья, Мяч, Маты, Баскетбольный мяч, Теннис.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 13:
+      </div>
+      <div class="task__statement task_case_statement">
+        Море, Континент, Государство, Остров, Суша, Вода.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 14:
+      </div>
+      <div class="task__statement task_case_statement">
+        Млекопитающие, Птицы, Животное, Рыба, Лев, Сова, Тигр, Крокодил, Акула,
+        Попугай.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 15:
+      </div>
+      <div class="task__statement task_case_statement">
+        Транспортное средство, Корабль, Пароход, Парусник, Корвет, Капитан,
+        Лодка.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 16:
+      </div>
+      <div class="task__statement task_case_statement">
+        Кондитерское изделие, Конфета, Карамель, Шоколадная конфета, Печенюшка,
+        Коробка конфет.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 17:
+      </div>
+      <div class="task__statement task_case_statement">
+        Боец, Охотник, Действия, Шаман, Лучник, Экстрасенс.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 18:
+      </div>
+      <div class="task__statement task_case_statement">
+        Товар, Камень, Драгоценный камень, Полудрагоценный камень, Рубин, Алмаз,
+        Изумруд, Кремень, Нитка.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 19:
+      </div>
+      <div class="task__statement task_case_statement">
+        Транспорт, Авиация, Грузовой самолет, Пассажирский, Военный, Ty134,
+        Boeing.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 20:
+      </div>
+      <div class="task__statement task_case_statement">
+        Фигура, Прямоугольник, Круг, Изменение размера, Элемент управления
+        (интерфейс с методами close, click и т.д.), Bitmap, PictureBox, Window.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 21:
+      </div>
+      <div class="task__statement task_case_statement">
+        Персона, Служащий, Обучающийся (обучение), Работающий, Токарь, Студент,
+        Студент-заочник, Программист.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 22:
+      </div>
+      <div class="task__statement task_case_statement">
+        Персона, Клиент, Адрес, Счет, Операции со счетом, Накопительный,
+        Валютный, Расчетный, Общий, Карта дебетовая и т.д.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 23:
+      </div>
+      <div class="task__statement task_case_statement">
+        Фигура, Прямоугольник, Оформление, Элемент управления, Кнопка, Меню,
+        Окно.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 24:
+      </div>
+      <div class="task__statement task_case_statement">
+        Фигура, Прямоугольник, Изменение размера, Элемент управления,Textbox,
+        Окно, Окно просмотра, Кнопка.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 25:
+      </div>
+      <div class="task__statement task_case_statement">
+        Товар, Техника, Монитор, ПК, Наушники, Проектор, Стол, Экран.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 26:
+      </div>
+      <div class="task__statement task_case_statement">
+        Товар, Мебель, Диван, Кровать, Шкаф, Шкаф-купе, Вешалка, Тумба, Стул.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Для чего используют статические классы? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Что может содержать статический класс? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 3. Что такое производный и базовый классы? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 4. Как используют ключевое слово base? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. В чем заключена основная задача наследования? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Пусть базовый класс содержит метод basefunc(), а производный класс не имеет
+          метода с таким именем. Может ли объект производного класса иметь
+          доступ к методу basefunc()? Если да, то при каких условиях?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. Напишите объявление конструктора без аргументов для производного класса B,
+          который будет вызывать конструктор без аргументов базового класса A.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          8. Что такое полиморфизм? Приведите пример.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Определите назначение виртуальных функций. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 10. Кому доступны переменные с модификатором protected? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 11. Наследуются ли переменные с модификатором private? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          12. As, is – что это, как применяется? В чем между ними отличие ?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          13. Поддерживает ли C# множественное наследование?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          14. Можно ли запретить наследование от класса?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          15. Можно ли разрешить наследование класса, но запретить перекрытие метода? 
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          16. Что такое абстрактный класс?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          17. В каком случае вы обязаны объявить класс абстрактным?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          18. В чем разница между абстрактными и виртуальными классами? Между
+          виртуальными и абстрактными методами?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          19. Какие компоненты класса могут быть виртуальными?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          20. Что такое интерфейс?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          21. Что может содержать интерфейс?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          22. Как работать с объектом через унаследованный интерфейс?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          23. Приведите пример явной реализации интерфейса.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          24. Почему нельзя указать модификатор видимости для методов интерфейса?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          25. Можно ли наследовать от нескольких интерфейсов?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          26. Назовите отличия между интерфейсом и абстрактным классом.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          27. Для чего используются стандартные интерфейсы ICloneable, IComparable, IComparer,
+          lEnumerable?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          28. В какой строке приведенного ниже фрагмента листинга не содержится ошибки?
+          <pre><code class="task__code">
+            class A {
+              public virtual abstract void m() { } //1
+              public virtual void g() { } //2
+              publicvirtual new new void f() { } //3
+              public static virtual void h() { } //4
+            }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          29. Что будет выведено на консоль в результате выполнения следующего фрагмента?
+          <pre><code class="task__code">
+            class A {
+              public int x = 1;
+            }
+            class B : A {
+              public new int x = 2;
+              public void m(int a, int b)
+                {
+                  x = a;
+                  base.x = b;
+                  Console.Write(x + " " + base.x);
+                }
+            }
+            class Test {
+              static void Main(string[] args) {
+                A a = new A();
+                B b = new B();
+                b.m(3, 4);
+              }
+            }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          30. Что будет выведено на консоль в результате выполнения следующего фрагмента кода?
+          <pre><code class="task__code">
+            class A {
+              public
+               class B : A {
+                public
+                 override void mA() { Console.WriteLine("B "); }
+               } public virtual void mA() {
+                 Console.WriteLine("A ");
+               }
+             } class Program {
+               static void Main(string[] args) {
+                 A a = new A();
+                 A.B b = new A.B();
+                 a.mA();
+                 b.mA();
+               }
+             }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          31. Чем может быть M4 если дано следующее определение:
+          <pre><code class="task__code">
+            public class C1 : M1, M2 { };
+            public struct S1 : M3, M4 { };
+          </code></pre>
+          <br />1)M4 - только интерфейс
+          <br />2)M4 - интерфейс или класс
+          <br />3)M4 - только класс
+          <br />4)M4 - только структура
+          <br />5)M4 - делегат
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          32. Выберите верное присваивание для объектов, определенных в листинге.
+          <pre><code class="task__code">
+            class A {} 
+            class B : A {}
+            class C : B {}
+            class D {} 
+            class Test {
+              static void Main(string[] args) {
+                A a = new A();
+                B b = new B();
+                C c = new C();
+                D d = new D();
+              }
+            }
+          </code></pre>
+          <br />1)b = a;
+          <br />2)a = b;
+          <br />3)c = a;
+          <br />4)d = a;
+          <br />5)c = b;
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          33. Что будет выведено на консоль в результате выполнения следующего фрагмента, если
+          раскомментировать строчку 1?
+          <pre><code class="task__code">
+            public abstract class A {
+              public virtual void method() { 
+                Console.Write("A "); 
+              }
+            } 
+            public class B : A {
+            public override void method() {  
+                // base.method(); // 1
+                // this.method(); // 2
+                Console.Write("B ");
+              }
+            } 
+            class Program2 {
+              static void Main(string[] args) {
+                A my = new B();
+                my.method();
+              }
+            }
+          </code></pre>
+          <br />1)B
+          <br />2)A
+          <br />3)A B
+          <br />4)B A
+          <br />5)0
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          34. В какой строке приведенного ниже фрагмента листинга содержится ошибка?
+          <pre><code class="task__code">
+            publica bstract class A {
+              public virtual string m() { return "A"; }  // 1
+            } 
+            public class B : A {
+              public override new string m() { return "B"; }  // 2
+            } 
+            public class C : B {
+              public string m() { return "C"; }  // 3
+            } 
+            class Program {
+              static void Main(string[] args) {
+                A ac = new C();  // 4
+                Console.WriteLine(ac.m());
+              }
+            }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          35. Почему приведенный ниже фрагмент листинга содержит ошибку?
+          <pre><code class="task__code">
+            abstract class Student  // 1
+            {
+             public
+              int Age {
+                get;
+                set;
+              }  // 2
+             public
+              string Name {
+                get;
+                set;
+              }  // 3
+            } static void Main(string[] args) {
+              Student Olga = new Student();  // 4
+            }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          36. В какой строке может быть ошибка компиляции?
+          <pre><code class="task__code">
+            class A { } 
+            class B : A { } 
+            class C : A { }  // 1
+            class Program4 {
+              static void Main() {
+                A one = new B();  // 2
+                A two = new C();  // 3
+                one = two;        // 4
+              }
+            }
+          </code></pre>
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          37. Что будет выведено на консоль в результате выполнения следующего фрагмента листинга?
+          <pre><code class="task__code">
+            interface Interface1 {
+              void f();
+              void g();
+            }
+            class A {
+             public void f() { System.Console.WriteLine("F"); }
+             public void g() { System.Console.WriteLine("G"); }
+            } class B : A, Interface1 {
+              new public void g() { System.Console.WriteLine("new G"); }
+            } class Program5 {
+              static void Main(string[] args) {
+                // Interface1 obj = new B();
+                // obj.g();
+                B obj = new B();
+                obj.g();
+              }
+            }
+          </code></pre>
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/3.36.php"
+          >Metanit (Глава 8. Дополнительные возможности ООП в C#)</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
