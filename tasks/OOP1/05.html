@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР05</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">
+          Структуры, перечисления, классы контейнеры и контроллеры
+        </div>
+        <div class="header__id">ЛР05</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork05 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-05</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        К предыдущей лабораторной работе (л.р. 5) добавьте к существующим
+        классам перечисление и структуру.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Один из классов сделайте partial и разместите его в разных файлах.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Определить класс-Контейнер для хранения разных типов объектов (в
+        пределах иерархии) в виде списка или массива (использовать абстрактный
+        тип данных). Класс- контейнер должен содержать методы get и set для
+        управления списком/массивом, методы для добавления и удаления объектов в
+        список/массив, метод для вывода списка на консоль.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Определить управляющий класс-Контроллер, который управляет объектом-
+        Контейнером и реализовать в нем запросы по варианту. При необходимости
+        используйте стандартные интерфейсы (IComparable, ICloneable,....)
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task_switch task__statement">
+        <span class="hljs-keyword">switch</span> (variant) {
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 1:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать (установить) разное ПО на Компьютер (хранить в виде списка или
+        массива). Найти Игрушки определенного типа и текстовый редактор заданной
+        версии, вывести все ПО в алфавитном порядке.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 2:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать UI из имеющихся фигур и элементов управления. Вывести список
+        всех кнопок, подсчитать общее количество элементов на UI, найти площадь
+        занимаемую всеми элментами
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 3:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Армию из людей и трансформеров. Найти в армии боевую единицу
+        заданного года рождения (создания), вывести имена трансформеров заданной
+        мощности, количество боевых единиц в армии.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 4:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать несколько объектов-цветов. Собрать Букет. Определить его
+        стоимость. Провести сортировку цветов в букете на основе любого
+        параметра. Найти цветок в букете, соответствующий заданному цвету.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 5:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Лабораторию и наполнить ее техникой. Найти технику старше
+        заданного срока службы. Подсчитать количество каждого вида техники.
+        Вывести список техники в порядке убывания цены.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 6:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Библиотеку с книгами, журналами и учебниками. Вывести
+        наименование всех книг в библиотеке, вышедших не ранее указанного года;
+        найти суммарное количество учебников в библиотеке, подсчитать стоимость
+        изданий, находящихся в библиотеке.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 7:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Сессию, содержащую зачеты и экзамены. Найти все экзамены по
+        заданному предмету, подсчитать общее количество испытаний в сессии и
+        количество тестов с заданным числом вопросов.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 8:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Программу передач. Найти все фильмы, снятые в определенный год,
+        подсчитать продолжительность программы по времени, число рекламных
+        роликов.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 9:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать Подарок. Рассчитать цену подарка. Найти в подарке компонент с
+        наименьшей массой. Произвести сортировку компонентов по габаритам.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 10:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать Бухгалтерию. Найти суммарную стоимость продукции заданного
+        наименования по всем накладным, количество чеков. Вывести две документы
+        за указанный период времени.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 11:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать частое Транспортное агентство. Подсчитать стоимость всех
+        транспортных средств. Провести сортировку автомобилей по расходу
+        топлива. Найти транспортное в компании, соответствующий заданному
+        диапазону параметров скорости.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 12:
+      </div>
+      <div class="task__statement task_case_statement">
+        Подготовить Спортзал. Снарядов должно быть фиксированное количество в
+        пределах выделенной суммы денег. Провести сортировку инвентаря в
+        Спортзале по одному из параметров. Найти снаряды, соответствующие
+        заданному диапазону цены.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 13:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Планету Земля. Найти все государства на заданном континенте,
+        подсчитать количество морей, вывести острова по алфавиту.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 14:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Зоопарк. Найти средний вес животных заданного вида в зоопарке,
+        количество хищных птиц, вывести всех животных отсортированных по году
+        рождения.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 15:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Порт. Найти среднее водоизмещение всех парусников в порту,
+        среднее количество посадочных мест на пароходах, все транспортные
+        средства на которых плавают капитаны моложе 35 лет.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 16:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать Детский подарок с определением его веса. Провести сортировку
+        конфет в подарке на основе одного из параметров. Найти конфету в
+        подарке, соответствующую заданному диапазону содержания сахара.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 17:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать Армию. Подсчитать силу атаки. Провести сортировку боевых единиц
+        на основе одного из параметров. Найти в армии самого сильного.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 18:
+      </div>
+      <div class="task__statement task_case_statement">
+        Собрать Ожерелье. Подсчитать общий вес (в каратах) и стоимость. Провести
+        сортировку камней ожерелья на основе ценности. Найти камни в ожерелье,
+        соответствующие заданному диапазону параметров прозрачности.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 19:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Авиакомпанию. Посчитать общую вместимость и грузоподъемность.
+        Провести сортировку самолетов компании по дальности полета. Найти
+        самолет в компании, соответствующий заданному диапазону параметров
+        потребления горючего.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 20:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать User Interface. Подсчитать общее число ЭУ. Провести сортировку
+        ЭУ на основе типа. Найти ЭУ, соответствующие заданному диапазону
+        параметров (например, ширина, цвет, размер и т.д.)
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 21:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Фокусную группу с разными людьми. Подсчитать количество
+        студентов. Провести сортировку людей в группе на основе возраста. Найти
+        в группе программистов.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 22:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Банк. Клиент может иметь несколько счетов в банке. Учитывать
+        возможность блокировки/разблокировки счета. Реализовать поиск и
+        сортировку счетов. Вычисление общей суммы по счетам заданного клиента.
+        Вычисление суммы по всем счетам, имеющим положительный и отрицательный
+        балансы отдельно.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 23:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Интерфейс программного средства. Реализовать поиск всех кнопок,
+        меню заданного уровня вложенности. Рассчитать площадь свободного места в
+        окне
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 24:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Интерфейс программного средства. Подсчитать количество
+        тексбоксов, количество интерактивных элементов управления.https://metanit.com/sharp/tutorial/2.12.php
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 25:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Компьютерный класс. Найти общую стоимость всей техники, вывести
+        оборудование в порядке убывания одного из параметров. Найти
+        оборудование, которое должно быть списано ( политику списания определить
+        самостоятельно)
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 26:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать Склад. Найти общую стоимость шкафов. Вывести мебель заданного
+        производителя (либо другого параметра). Провести сортировку товаров на
+        основе соотношения цены и веса
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Чем класс отличается от структуры? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Что может и чего не может быть в структуре? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Что такое перечисление? Приведите пример определения и
+          использования перечисления?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 4. Перечислите и поясните стандартные интерфейсы .Net? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Как используется интерфейс IComparable? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Как используется интерфейс ICloneable? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. Что такое полиморфизм? Перечислите его формы. Приведите примеры.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Зачем в классе определяют виртуальные методы? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Как сделать запрет переопределения методов? </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/2.12.php"
+          >Metanit (Перечисления enum в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        1. Добавьте в класс-контроллер метод, считывающий построчно текстовый
+        файл, в котором хранятся данные вашего класса и инициализирует таким
+        образом коллекцию.
+      </div>
+      <div class="task__statement">
+        2. Реализуйте еще один метод, который будет считывать данные из json
+        файла и инициализировать коллекцию<a
+          class="task__link"
+          target="_blank"
+          href="https://www.newtonsoft.com/json"
+        >
+          (https://www.newtonsoft.com/json)</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
