@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР06</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Исключения</div>
+        <div class="header__id">ЛР06</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork06 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-06</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Дополнить предыдущую лабораторную работу No 5. Создайте иерархию классов
+        исключений (собственных) – 3 типа и более. Сделайте наследование
+        пользовательских типов исключений от стандартных классов .Net (например,
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-6.0"
+          >Exception</a
+        >, IndexOutofRange).
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Смоделируйте и обработайте как минимум пять различных исключительных
+        ситуаций на основе своих и стандартных исключений. Например, не
+        позволять при инициализации объектов передавать неверные данные,
+        обрабатывать ошибки при работе с памятью и ошибки работы с файлами,
+        деление на ноль, неверный индекс, нулевой указатель и т. д.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        В конце поставьте универсальный обработчик catch.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используйте классический вид try-catch-finally.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Продемонстрируйте возможность многоразовой обработки одного исключения и
+        проброс его выше по стеку вызовов.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Обработку исключений вынести в main. При обработке выводить
+        специфическую информацию о месте, диагностику и причине исключения.
+        Последним должен быть блок, который отлавливает все исключения
+        (finally).
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Обработку исключений вынести в main. При обработке выводить
+        специфическую информацию о месте, диагностику и причине исключения.
+        Последним должен быть блок, который отлавливает все исключения
+        (finally).
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Ознакомьтесь с классами
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debug?view= net-6.0"
+          >Debug</a
+        >
+        и
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.debugger?view=net-6.0"
+          >Debugger</a
+        >: Пример:
+        <pre><code class="task__code">
+int[] aa= null;
+Debug.Assert(aa !=null, "Values array cannot be null");
+
+// Не забудьте подключить using System.Diagnostics;
+</code></pre>
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Расскажите как генерируется исключение. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Расскажите методику обработки исключений. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Какое ключевое слово служит для обозначения блока кода, в котором
+          можно генерировать исключение?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Какие ключевые слова используются для обработки и генерации
+          исключений? Расскажите об механизме обработке исключения?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          5. Что будет, если в программе нет предложения catch, способного
+          обработать исключение?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Что такое фильтры исключения? Приведите пример. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Могут ли исключения быть вложенными? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          8. Какой синтаксис нужно использовать в C# для отлова любого
+          возможного исключения?</span
+        >
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          9. Чем следует руководствоваться при размещении обработчиков
+          исключения?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          10. Что будет выведено на консоль в результате выполнения фрагмента
+          листинга?
+        </span>
+        <pre><code class="task__code">
+            static void Main(string[] args) {
+              string[] str = new string[5];
+              try {
+                str[4] = "anything";
+                Console.WriteLine("It's OK");
+              } catch (IndexOutOfRangeException e) {
+                Console.WriteLine("IndexOutOfRangeException");
+              } catch (Exception e) {
+                Console.WriteLine("Exception");
+              }
+            }
+          </code></pre>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          11. Как повторно сгенерировать то же самое исключение в блоке
+          обработчике catch?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          12. Какие методы содержаться в классе Exception? Где и как их можно
+          использовать?
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/2.14.php"
+          >Metanit (Обработка исключений в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <b>Дополнительное задание</b><br />
+        1. Создайте класс Logger, который будет заниматься логгированием
+        различных событий и исключений. Логгер должен уметь логгировать
+        ошибки/исключения, предупреждения и просто какую-то информацию.
+      </div>
+      <div class="task__statement">
+        2. Логгер должен записывать лог в виде: время, тип_записи_лога:
+        дополнительное сообщение. 27.10.2019 02:36, INFO: Test log message.
+      </div>
+      <div class="task__statement">
+        3. Создайте 2 реализации логгера: FileLogger и ConsoleLogger. FileLogger
+        будет записывать сообщения лога в файл, добавляя записи к уже
+        существующим. ConsoleLogger – выводить сообщения на консоль.
+      </div>
+      <div class="task__statement">
+        4. Добавьте в классы из л.р. 6 логгер так, чтобы его возможно было
+        быстро заменить во время выполнения другим и вместо простого вывода на
+        консоль сообщения об ошибке, используйте свой логгер.
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
