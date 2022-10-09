@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР07</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Обобщения</div>
+        <div class="header__id">ЛР07</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork07 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-07</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте обобщенный интерфейс с операциями добавить, удалить,
+        просмотреть.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Возьмите за основу лабораторную No 3 «Перегрузка операций» и сделайте из
+        нее обобщенный тип (класс) CollectionType <T>, в который вложите
+        обобщённую коллекцию. Наследуйте в обобщенном классе интерфейс из п.1.
+        Реализуйте необходимые методы (добавления, удаления, поиска по
+        предикату). Добавьте обработку исключений c finally. Наложите какое-либо
+        ограничение на обобщение.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Проверьте использование обобщения для стандартных типов данных (в
+        качестве стандартных типов использовать целые, вещественные и т.д.).
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Определить пользовательский класс, который будет использоваться в
+        качестве параметра обобщения. Для пользовательского типа взять класс из
+        лабораторной No4 «Наследование».
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Добавьте методы сохранения объектов обобщённого типа CollectionType<T>
+        в файл и чтения из него ( на выбор: текстовый | xml | json).
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое обобщение (generic)? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Как можно наложить определенное ограничение на параметр?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 3. Как можно наложить несколько ограничений на параметр? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Перечислите все существующие ограничения на типы данных обобщения?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          5. Какое ограничение на тип задано в следующем фрагменте листинга?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Какое ограничение на тип задано в следующем фрагменте листинга?
+        </span>
+        <pre><code class="task__code">
+          interface A { }
+          class Test<T> where T : class { }
+        </code></pre>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. Какое ограничение на тип задано в следующем фрагменте листинга?
+        </span>
+        <pre><code class="task__code">
+          class A { }
+          class В : A { }
+          class С { }
+          class Test<T> where T : A { }
+        </code></pre>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          8. Приведите примеры, когда обобщенный класс может действовать как
+          базовый или производный класс.</span
+        >
+        <pre><code class="task__code">
+          interface A { }
+          class Test<T> where T : struct { }
+        </code></pre>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          9. В каких случаях в обобщениях может использоваться оператор default?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          10. Поясните как использовать статические переменные в обобщенных
+          классах.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 11. Приведите пример обобщенного интерфейса. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          12. В чем отличие обобщенных классов от обобщенных структур?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          13. Какие классы для работы с файлами вы знаете? Приведите пример.
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/3.12.php"
+          >Metanit (Обобщения в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0"
+          >Generic Namespace</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
