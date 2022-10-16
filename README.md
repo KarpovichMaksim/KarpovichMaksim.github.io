@@ -9,6 +9,7 @@
 [OOP/TASK/05 - Структуры, перечисления, классы контейнеры и контроллеры](https://karpovichmaksim.github.io/tasks/OOP1/05.html)   
 [OOP/TASK/06 - Исключения](https://karpovichmaksim.github.io/tasks/OOP1/06.html)   
 [OOP/TASK/07 - Обобщения](https://karpovichmaksim.github.io/tasks/OOP1/07.html)   
+[OOP/TASK/08 - Коллекции](https://karpovichmaksim.github.io/tasks/OOP1/08.html)   
 
 #### Лекции
 [OOP/LECTURE/01 - CLR NET](https://karpovichmaksim.github.io/lectures/1_CS_CLR_NET.pdf)   
