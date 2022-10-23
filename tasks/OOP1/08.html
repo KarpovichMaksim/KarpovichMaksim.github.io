@@ -11,7 +11,7 @@
   <body>
     <section id="header" class="header">
       <div class="header__content">
-        <div class="header__subject">Коллекции</div>
+        <div class="header__subject">Делегаты, события и лямбда выражения</div>
         <div class="header__id">ЛР08</div>
       </div>
     </section>
@@ -31,12 +31,21 @@
 
     <section class="task">
       <div class="task__statement">
-        Создайте класс по варианту, определите в нем свойства и методы, реализуйте
-        указанный интерфейс и другие при необходимости, соберите объекты класса в
-        коллекцию (можно сделать специальных класс с вложенной коллекцией и
-        методами ею управляющими), продемонстрируйте работу
-        с ней
-        (добавление/удаление/поиск/вывод:
+        Используя делегаты (множественные) и события промоделируйте ситуации,
+        приведенные в таблице ниже. Можете добавить новые типы (классы), если
+        существующих недостаточно. При реализации методов везде где возможно
+        использовать лямбда-выражения.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте пять методов пользовательской обработки строки (например,
+        удаление знаков препинания, добавление символов, замена на заглавные,
+        удаление лишних пробелов и т.п.). Используя стандартные типы делегатов
+        (Action, Func, Predicate) организуйте алгоритм последовательной
+        обработки строки написанными вами методами. Далее приведен перечень
+        заданий.
       </div>
     </section>
 
@@ -45,196 +54,98 @@
         <span class="hljs-keyword">switch</span> (variant) {
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 1:
+        <span class="hljs-keyword">case</span> 1 || 2 || 15:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Автомобиль</br>
-        Интерфейс: IList<T></br>
-        Коллекция: Dictionary <TKey,TValue>
+        Создать класс Пользователь с событиями Переместить (можно задать
+        смещение) и Сжать (коэффициент сжатия). В main создать некоторое
+        количество объектов разного типа. Часть объектов подписать на одно
+        событие, часть на два (часть можете не подписывать). Проверить состояния
+        объектов после наступления событий.
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 2:
+        <span class="hljs-keyword">case</span> 3 || 4:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Книга</br>
-        Интерфейс: IDictionary<TKey,TValue></br>
-        Коллекция: List<T></T>
+        Создать класс Директор с событиями Повысить (можно задать величину) и
+        Штраф. В main создать некоторое количество объектов токарей и
+        студентов-заочников (или т.п.). Часть объектов подписать на одно
+        событие, часть на два (часть можете не подписывать). Проверить состояния
+        зарплаты после наступления событий.
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 3:
+        <span class="hljs-keyword">case</span> 5 || 6:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Товар</br>
-        Интерфейс: IOrderedDictionary</br>
-        Коллекция: ConcurrentBag<T>
+        Создать класс Игра с событиями Атака и Лечить. В main создать некоторое
+        количество игровых объектов. Подпишите объекты на события произвольным
+        образом. Реакция на события у разныхобъектов может быть разной (без
+        изменения, увеличивается/уменьшается уровень жизни). Проверить состояния
+        игровых объектов после наступления событий, возможно не однократном.
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 4:
+        <span class="hljs-keyword">case</span> 7 || 8:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Работник</br>
-        Интерфейс: IEnumerable<T></br>
-        Коллекция: Hashtable
+        Создать класс Boss с событиями Upgrade и Turn-on (под определенным
+        напряжением, учтите что техника или человек могут сломаться). В main
+        создать некоторое количество объектов (техники или полу-техники).
+        Подпишите объекты на события произвольным образом. Реакция на события у
+        разных объектов будет разная. Проверить результаты изменения состояния
+        объектов после наступления событий, возможно не однократном.
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 5:
+        <span class="hljs-keyword">case</span> 9 || 10:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Студент</br>
-        Интерфейс: IEnumerable<T></br>
-        Коллекция: Queue<T>
+        Создать класс Программист с событиями Удалить и Мутировать. В main
+        создать некоторое количество объектов (списков). Подпишите объекты на
+        события произвольным образом. Реакция на события может быть следующая:
+        удаление первого/последнего элемента списка, случайное перемещение строк
+        и т.п. Проверить результаты изменения состояния объектов после
+        наступления событий, возможно не однократном
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 6:
+        <span class="hljs-keyword">case</span> 11 || 12:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Компьютер</br>
-        Интерфейс: ISet<T></br>
-        Коллекция: HashSet<T>
+        Создать класс Пользователь с событиями upgrade и work. В main создать
+        некоторое количество объектов (ПО). Подпишите объекты на события
+        произвольным образом. Реакция на события может быть следующая:
+        обновление версии, вывод сообщений и т.п. Проверить результаты изменения
+        объектов после наступления событий.
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
       </div>
       <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 7:
+        <span class="hljs-keyword">case</span> 13 || 14:
       </div>
       <div class="task__statement task_case_statement">
-        Тип: Программное обеспечение</br>
-        Интерфейс: IList<T></br>
-        Коллекция: SortedList <TKey,TValue>
+        Создать класс Программист с событиями Переименовать и Новое свойство. В
+        main создать некоторое количество объектов (языков программирования).
+        Подпишите объекты на события произвольным образом. Реакция на события
+        может быть следующая: изменение имени/версии, добавление новых операций,
+        технологий или понятий. Проверить результаты изменения состояния
+        объектов после наступления событий, возможно не однократном
       </div>
       <div class="task_case task__statement">
         <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 8:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Мебель</br>
-        Интерфейс: IList<T></br>
-        Коллекция: ArryList
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 9:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Изображение</br>
-        Интерфейс: ISet<T></br>
-        Коллекция: LinkedList<T>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 10:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Игра</br>
-        Интерфейс: IEnumerable<T></br>
-        Коллекция: BlockingCollection<T>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 11:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Геометрическая фигура</br>
-        Интерфейс: IEnumerator</br>
-        Коллекция: Stack
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 12:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Интернет-ресурс</br>
-        Интерфейс: IList<T></br>
-        Коллекция: ConcurrentDictionery<TKey, TValue>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 13:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Услуги</br>
-        Интерфейс: IOrderedDictionary</br>
-        Коллекция: Queue<T>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 14:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Концерт</br>
-        Интерфейс: любой</br>
-        Коллекция: Dictionary < TKey, TValue>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">case</span> 15:
-      </div>
-      <div class="task__statement task_case_statement">
-        Тип: Растение</br>
-        Интерфейс: IList<T></br>
-        Коллекция: HashSet<T>
-      </div>
-      <div class="task_case task__statement">
-        <span class="hljs-keyword">break</span>;
-      </div>
-    </section>
-
-    <section class="task">
-      <div class="task__statement">
-        Создайте универсальную коллекцию в соответствии с вариантом задания и
-        заполнить ее данными встроенного типа .Net (int, char,...).</br>
-        a. Выведите коллекцию на консоль</br>
-        b. Удалите из коллекции n последовательных элементов</br>
-        c. Добавьте другие элементы (используйте все возможные методы
-        добавления для вашего типа коллекции).</br>
-        d. Создайте вторую коллекцию (из таблицы выберите другой тип
-        коллекции) и заполните ее данными из первой коллекции.</br>
-        e. Выведите вторую коллекцию на консоль. В случае не совпадения
-        количества параметров (например, LinkedList<T> и Dictionary<Tkey,
-        TValue>), при нехватке - генерируйте ключи, в случае избыточности –
-        оставляйте TValue.</br>
-        f. Найдите во второй коллекции заданное значение.
-      </div>
-    </section>
-
-    <section class="task">
-      <div class="task__statement">
-        Создайте объект наблюдаемой коллекции ObservableCollection<T>. Создайте
-          произвольный метод и зарегистрируйте его на событие CollectionChange.
-          Напишите демонстрацию с добавлением и удалением элементов. В качестве
-          типа T используйте свой класс из таблицы.
       </div>
     </section>
 
@@ -253,63 +164,55 @@
 
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
-        <span> 1. На какие основные виды/типы делятся все коллекции .NET? Охарактеризуйте
-          каждый из них. </span>
+        <span> 1. Что такое делегат? Как определить делегат? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Назначение делегатов. </span>
       </div>
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
         <span>
-          2. Что такое generic-коллекции? Назовите примеры известных вам generic-
-          коллекций.
+          3. Какие есть способы присваивания делегату адреса метода?
         </span>
       </div>
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
-        <span> 3. В чем разница между ArrayList и Array? </span>
+        <span> 4. Поясните назначение метода Invoke. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Что такое групповая адресация делегата? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Как создать событие? </span>
       </div>
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
         <span>
-          4. Охарактеризуйте коллекции, которые вы использовали в своем варианте.
-        </span>
-      </div>
-      <div class="task__statement">
-        <input class="task__checkbox" type="checkbox" />
-        <span>
-          5. Чем отличаются коллекции, расположенные в пространстве имен
-          System.Collections.Concurrent?
-        </span>
-      </div>
-      <div class="task__statement">
-        <input class="task__checkbox" type="checkbox" />
-        <span>
-          6. Какое пространство имен необходимо подключить в проект, чтобы иметь
-          возможность использовать generic-коллекции?
-        </span>
-      </div>
-      <div class="task__statement">
-        <input class="task__checkbox" type="checkbox" />
-        <span>
-          7. Что такое наблюдаемая коллекция? Как ее можно использовать?
+          7. Как события связаны с делегатами? Опишите и поясните схему
+          взаимодействия.
         </span>
       </div>
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
         <span>
-          8. Охарактеризуйте интерфейсы IEnumerator, IEnumerator. В чем отличие
-          назначений интерфейсов IEnumerator и IEnumerable.</span
+          8. Что такое лямбда-выражения? Приведите пример лямбда-выражения с
+          несколькими параметрами.</span
         >
       </div>
       <div class="task__statement">
         <input class="task__checkbox" type="checkbox" />
         <span>
-          9. Поясните принцип работы коллекций: </br>
-            a. LinkedList <T></br>
-            b. HashSet <T></br>
-            c. Dictionary <Tkey, TValue></br>
-            d. ConcurrentBag <Tkey, TValue></br>
-            e. Stack<t>, Queue<T></br>
-            f. SortedList, SortedList.
+          9. Что такое ковариантность и контравариантность делегатов? Что это
+          дает?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          10. Поясните разницу между встроенными делегатами Action и Func.
         </span>
       </div>
     </section>
@@ -319,32 +222,24 @@
         <a
           class="task__link"
           target="_blank"
-          href="https://metanit.com/sharp/tutorial/4.5.php"
-          >Metanit (Коллекции в C#)</a
+          href="https://metanit.com/sharp/tutorial/3.13.php"
+          >Metanit (Делегаты в C#)</a
         >
       </div>
       <div class="task__statement">
         <a
           class="task__link"
           target="_blank"
-          href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0"
-          >Collections Generic</a
+          href="https://metanit.com/sharp/tutorial/3.14.php"
+          >Metanit (Cобытия в C#)</a
         >
       </div>
       <div class="task__statement">
         <a
           class="task__link"
           target="_blank"
-          href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent?view=net-6.0"
-          >Collections Concurrent</a
-        >
-      </div>
-      <div class="task__statement">
-        <a
-          class="task__link"
-          target="_blank"
-          href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized?view=net-6.0"
-          >Collections Specialized</a
+          href="https://metanit.com/sharp/tutorial/3.16.php"
+          >Metanit (Лямбда выражения в C#)</a
         >
       </div>
     </section>
