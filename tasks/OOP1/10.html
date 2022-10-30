@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР10</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">LINQ</div>
+        <div class="header__id">ЛР10</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork10 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-10</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Задайте массив типа string, содержащий 12 месяцев (June, July, May,
+        December, January ....). Используя LINQ to Object напишите запрос
+        выбирающий последовательность месяцев с длиной строки равной n, запрос
+        возвращающий только летние и зимние месяцы, запрос вывода месяцев в
+        алфавитном порядке, запрос считающий месяцы содержащие букву «u» и
+        длиной имени не менее 4-х..
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте коллекцию List<T> и параметризируйте ее типом (классом) из
+        лабораторной No2 (при необходимости реализуйте нужные интерфейсы).
+        Заполните ее минимум 10 элементами. Если в задании указано свойство,
+        которым ваш класс не обладает, то его нужно расширить, чтобы класс
+        соответствовал условию. Один из запросов реализуйте используя язык LINQ
+        и используя методы расширения LINQ.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        На основе LINQ сформируйте следующие запросы по вариантам. При
+        необходимости добавьте в класс T (тип параметра) свойства.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        На основе LINQ сформируйте следующие запросы по вариантам. При
+        необходимости добавьте в класс T (тип параметра) свойства.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">Придумайте запрос с оператором Join.</div>
+    </section>
+
+    <section class="task">
+      <div class="task_switch task__statement">
+        <span class="hljs-keyword">switch</span> (variant) {
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 1:
+      </div>
+      <div class="task__statement task_case_statement">
+        количество векторов, содержащих 0; список векторов с наименьшим модулем.
+        массив векторов (один) длины (количество элементов) 3,5,7. максимальный
+        вектор первый вектор с отрицательным значением упорядоченный список
+        векторов по размеру
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 2:
+      </div>
+      <div class="task__statement task_case_statement">
+        список рейсов для заданного пункта назначения; количество рейсов для
+        заданного дня недели Рейс который вылетает в понедельник раньше всех
+        Рейс который вылетает в среду или пятницу позже всех Список рейсов,
+        упорядоченных по времени вылета
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 3:
+      </div>
+      <div class="task__statement task_case_statement">
+        список студентов заданной специальности по алфавиту; список заданной
+        учебной группы и факультета самого молодого студента количество
+        студентов заданной группы упорядоченных по фамилии первого студента с
+        заданным именем
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 4:
+      </div>
+      <div class="task__statement task_case_statement">
+        список покупателей в алфавитном порядке; список покупателей, у которых
+        номер кредитной карточки находится в заданном интервале максимального
+        покупателя (критерии определитсамостоятельно) первых пят покупателей с
+        максимальной суммой на карте
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 5:
+      </div>
+      <div class="task__statement task_case_statement">
+        список абитуриентов, имеющих неудовлетворительные оценки; список
+        абитуриентов, у которых сумма баллов выше заданной; количество
+        абитуриентов с 10-ками по определенному предмету массив абитуриентов
+        упорядоченных по алфавиту 4 последних абитуриента с самой низкой
+        успеваемостью
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 6:
+      </div>
+      <div class="task__statement task_case_statement">
+        список книг заданного автора и года; список книг, выпущенных после
+        заданного года самую тонкую книгу 5 первых самых толстых книг по низкой
+        цене Список книг отсортированных по цене
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 7:
+      </div>
+      <div class="task__statement task_case_statement">
+        список квартир, имеющих заданное число комнат; пять первых квартир на
+        заданной улице заданного дома количество квартир на определенной улице
+        список квартир, имеющих заданное число комнат и расположенных на этаже,
+        который находится в заданном промежутке;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 8:
+      </div>
+      <div class="task__statement task_case_statement">
+        сведения об абонентах, у которых время внутригородских разговоров
+        превышает заданное; сведения об абонентах, которые пользовались
+        междугородной связью; количество абонентов с заданным значением дебета
+        максимального абонента (по вашему критерию) упорядоченный список
+        абонентов по фамилии
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 9:
+      </div>
+      <div class="task__statement task_case_statement">
+        Создать массив объектов. Вывести: список автомобилей заданной марки;
+        список автомобилей заданной модели, которые эксплуатируются больше n
+        лет; количество автомобильной заданного цвета и диапазона цены самый
+        старый автомобиль первых пять самых новых автомобилей упорядоченный
+        массив по цене
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 10:
+      </div>
+      <div class="task__statement task_case_statement">
+        список товаров для заданного наименования; список товаров для заданного
+        наименования, цена которых не превосходит заданную; количество
+        наименований цена которых больше 100 максимальный товар (ваш критерий
+        максимальности) упорядоченный набор товаров по производителю, а потом по
+        количеству.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 11:
+      </div>
+      <div class="task__statement task_case_statement">
+        Вывести: список поездов, следующих до заданного пункта назначения;
+        список поездов, следующих до заданного пункта назначения и
+        отправляющихся после заданного часа; максимальный поезд по количеству
+        мест последние пять поездов по времени отправления упорядоченный список
+        поездов по пункту назначения в алфавитном порядке
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 12:
+      </div>
+      <div class="task__statement task_case_statement">
+        список автобусов для заданного номера маршрута; список автобусов,
+        которые эксплуатируются больше заданного срока; минимальный по пробегу
+        автобус последние два автобуса максимальные по пробегу упорядоченный
+        список автобусов по номеру
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 13:
+      </div>
+      <div class="task__statement task_case_statement">
+        список рейсов для заданного пункта назначения; список рейсов для
+        заданного дня недели; максимальны по дню недели рейс все рейсы в
+        определенный день недели и с самым поздним временем вылета упорядоченные
+        по дню и времени рейсы количество рейсов для заданного типа самолета
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 14:
+      </div>
+      <div class="task__statement task_case_statement">
+        стек с наименьшим/наибольшим верхним элементом; список стеков,
+        содержащих отрицательные элементы. Минимальный стек Массив стеков длины
+        1 и 3 Первый стек с нулевым элементом Упорядоченный массив стеков по
+        сумме элементов
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 15:
+      </div>
+      <div class="task__statement task_case_statement">
+        множества с наименьшей/наибольшей суммой элементов; список множеств,
+        содержащих отрицательные элементы. Количество множеств, содержащих
+        заданное значение Максимальное множество Первое множество с заданным
+        элементом Упорядоченный массив множеств по первому элементу
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 16:
+      </div>
+      <div class="task__statement task_case_statement">
+        список дат для заданного года; список дат, которые имеют заданный месяц
+        количество дат в определённом диапазоне максимальную дату Первую дату
+        для заданного дня Упорядоченный список дат (хронологически)
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 17:
+      </div>
+      <div class="task__statement task_case_statement">
+        количество строк длины n и т список строк, которые содержат заданное
+        слово. Максимальную строку Первую строку, содержащую точку или ?
+        Последнюю строку с самым коротким словом Упорядоченный массив по первому
+        слову
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 18:
+      </div>
+      <div class="task__statement task_case_statement">
+        матрицу с наибольшим/наименьшим количеством единиц; список матриц с
+        равным количеством заданного символа в каждой строке Максимальную
+        матрицу Количество матриц заданного размера Упорядоченный список матриц
+        по количеству единиц
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 19:
+      </div>
+      <div class="task__statement task_case_statement">
+        группы окружностей, центры которых лежат на одной прямой; наибольший и
+        наименьший по площади (периметру) объект; Количество окружностей
+        заданного радиуса Первую окружность, лежащую в первой четверти
+        Упорядоченный список окружностей по площади
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 20:
+      </div>
+      <div class="task__statement task_case_statement">
+        количество четырехугольников разного типа (квадрат, прямоугольник, ромб,
+        произвольный) определить для каждой группы наибольший и наименьший по
+        площади (периметру) объект Массив квадратов со стронной не более x
+        Упорядоченный по периметру массив прямоугольников
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 21:
+      </div>
+      <div class="task__statement task_case_statement">
+        количество векторов, содержащих 0; список векторов с наименьшим модулем.
+        массив векторов (один) длины (количество элементов) 3,5,7. максимальный
+        вектор первый вектор с отрицательным значением упорядоченный список
+        векторов по размеру
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 22:
+      </div>
+      <div class="task__statement task_case_statement">
+        вектора с заданным числом единиц/нулей; определить и вывести равные
+        вектора в коллекции максимальный вектор первый вектор с n единицами
+        упорядоченный вектор по числу едини
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 23:
+      </div>
+      <div class="task__statement task_case_statement">
+        время с заданным значением часов; списки времен по группам: ночь, утро,
+        день, вечер минимальное время Первое время в котором часы и минуты
+        совпадают Упорядоченный список времен
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 24:
+      </div>
+      <div class="task__statement task_case_statement">
+        массивы только с четными/нечетными элементами; массив с наибольшей
+        суммой элементов минимальный массив количество массивов, содержащих
+        заданное значение количество равных массивов упорядоченный массив
+        массивов по первому элементу
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 25:
+      </div>
+      <div class="task__statement task_case_statement">
+        подсчитать количество треугольников разного типа (равносторонний,
+        равнобедренный, прямоугольный, произвольный). определить для каждой
+        группы наибольший и наименьший по периметру объект минимальный по
+        площади треугольник треугольники со длинами сторон из диапазона < n и > m
+        упорядоченный по сумме длин сторон массив треугольников
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 26:
+      </div>
+      <div class="task__statement task_case_statement">
+        множества только с четными/нечетными элементами; множества, содержащие
+        отрицательные элементы. Количество пустых множеств Список множеств длины
+        которых принадлежат заданному диапазону Минимальное множество
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое LINQ? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. В чем разница между отложенными операциями и не отложенными
+          операциями LINQ to Object?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 3. Что такое лямбда-выражения? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Какие есть группы операции в LINQ to Object? Перечислите
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Как используется операция Where в LINQ to Object? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Как используется операция Select ? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Как используются операции Take, Skip? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Как используется операция Concat ? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Как используется операция OrderBy? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 10. Как используется операция Join? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 11. Как используются операции Take, Skip? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          12. Как используются операции First, Last, Any, All и Contains?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          13. Как используются операции Count, Sum, Min и Max, Average?
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/15.1.php"
+          >Metanit (LINQ в C#)</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/3.16.php"
+          >Metanit (Лямбды в C#)</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
