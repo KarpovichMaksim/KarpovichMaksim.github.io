@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР11</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Рефлексия</div>
+        <div class="header__id">ЛР11</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork11 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-11</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Для изучения .NET Reflection API напишите статический класс Reflector ,
+        который собирает информацию и будет содержать методы выполняющие
+        исследования класса (принимают в качестве параметра имя класса) и
+        записывающие информацию в файл (формат тестовый, json или xml): <br />
+        a. Определение имени сборки, в которой определен класс; <br />
+        b. есть ли публичные конструкторы;<br />
+        c. извлекает все общедоступные публичные методы класса (возвращает
+        IEnumerable<string>);<br />
+        d. получает информацию о полях и свойствах класса (возвращает
+        IEnumerable<string>);<br />
+        e. получает все реализованные классом интерфейсы (возвращает
+        IEnumerable<string>);<br />
+        f. выводит по имени класса имена методов, которые содержат заданный
+        (пользователем) тип параметра (имя класса передается в качестве
+        аргумента);<br />
+        g. метод Invoke, который вызывает метод класса, при этом значения для
+        его параметров необходимо 1) прочитать из текстового файла (имя класса и
+        имя метода передаются в качестве аргументов) 2) сгенерировать, используя
+        генератор значений для каждого типа. Параметрами метода Invoke должны
+        быть : объект, имя метода, массив параметров
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Продемонстрируйте работу «Рефлектора» для исследования типов на
+        созданных вами классах не менее двух (предыдущие лабораторные работы) и
+        стандартных классах .Net.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Добавьте в Reflector обобщенный метод Create, который создает объект
+        переданного типа (на основе имеющихся публичных конструкторов) и
+        возвращает его пользователю.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое рефлексия? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Какие есть способы получения объекта типа Type. Приведите три
+          способа получения типа.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Охарактеризуйте классы из пространства имен System.Reflection.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Как можно использовать класс System.Type? Перечислите его свойства
+          и методы.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Что такое позднее и раннее связывание? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Как динамически загрузить сборку в приложение? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Что такое позднее (раннее) связывание? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          8. Для чего предназначены BindingFlags? Какую комбинацию флагов
+          необходимо использовать, чтобы иметь возможность получать приватные
+          члены класса?
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/14.1.php"
+          >Metanit (Рефлексия в C#)</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>

@@ -12,6 +12,7 @@
 [OOP/TASK/08 - Делегаты, события и лямбда выражения](https://karpovichmaksim.github.io/tasks/OOP1/08.html)   
 [OOP/TASK/09 - Коллекции](https://karpovichmaksim.github.io/tasks/OOP1/09.html)   
 [OOP/TASK/10 - LINQ](https://karpovichmaksim.github.io/tasks/OOP1/10.html)   
+[OOP/TASK/11 - Рефлексия](https://karpovichmaksim.github.io/tasks/OOP1/11.html)   
 
 #### Лекции
 [OOP/LECTURE/01 - CLR NET](https://karpovichmaksim.github.io/lectures/1_CS_CLR_NET.pdf)   
