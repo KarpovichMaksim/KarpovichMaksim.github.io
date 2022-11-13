@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР12</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">
+          Работа с потоковыми классами и файловой системой
+        </div>
+        <div class="header__id">ЛР12</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork12 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-12</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Каждый класс в данном проекте должен начинаться (Префикс) с ваших
+        инициалов ФИО (AVF, JK,....). Предусмотреть обработку ошибок.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создать класс XXXLog. Он должен отвечать за работу с текстовым файлом
+        xxxlogfile.txt. в который записываются все действия пользователя и
+        соответственно методами записи в текстовый файл, чтения, поиска нужной
+        информации.<br />
+        Используя данный класс выполните запись всех последующих действиях
+        пользователя с указанием действия, детальной информации (имя файла,
+        путь) и времени (дата/время)
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создать класс XXXDiskInfo c методами для вывода информации о<br />
+        a. Свободном месте на диске<br />
+        b. Файловой системе<br />
+        c. Для каждого существующего диска - имя, объем, доступный объем, метка
+        тома.<br />
+        d. Продемонстрируйте работу класса
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создать класс XXXFileInfo c методами для вывода информации о конкретном
+        файле<br />
+        a. Полный путь<br />
+        b. Размер, расширение, имя<br />
+        c. Дата создания, изменения<br />
+        d. Продемонстрируйте работу класса
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создать класс XXXDiskInfo c методами для вывода информации оСоздать
+        класс XXXDirInfo c методами для вывода информации о конкретном
+        директории<br />
+        a. Количестве файлов<br />
+        b. Время создания<br />
+        c. Количестве поддиректориев<br />
+        d. Список родительских директориев<br />
+        e. Продемонстрируйте работу класса
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создать класс XXXFileManager. Набор методов определите самостоятельно. С
+        его помощью выполнить следующие действия:<br />
+        a. Прочитать список файлов и папок заданного диска. Создать директорий
+        XXXInspect, создать текстовый файл xxxdirinfo.txt и сохранить туда
+        информацию. Создать копию файла и переименовать его. Удалить
+        первоначальный файл.<br />
+        b. Создать еще один директорий XXXFiles. Скопировать в него все файлы с
+        заданным расширением из заданного пользователем директория. Переместить
+        XXXFiles в XXXInspect.<br />
+        c. Сделайте архив из файлов директория XXXFiles. Разархивируйте его в
+        другой директорий.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Найдите и выведите сохраненную информацию в файле xxxlogfile.txt о
+        действиях пользователя за определенный день/ диапазон времени/по
+        ключевому слову. Посчитайте количество записей в нем. Удалите часть
+        информации, оставьте только записи за текущий час.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Обязательно обрабатывайте возможные ошибки. В случае с потоками
+        необходимо использовать конструкцию using. Если необходимо «построить»
+        путь, то следует использовать методы класса Path
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Какие классы содержаться с System.IO? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Для чего используются классы Directory и DirectoryInfo? В чем
+          отличие?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Для чего используются классы File и FileInfo? Какие методы они
+          содержат.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Для чего используются классы StreamReader и StreamWriter?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Для чего используются классы BinaryWriter и BinaryReader? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. Как можно сжимать и восстанавливать файлы? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Расскажите алгоритм сжатия GZip. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          8. Для чего служит класс Path?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          9. Что такое тестовый и бинарный файл. Как можно выполнить чтение
+          и запись в эти файлы.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          10. Что такое произвольный доступ к файлу? Приведите пример.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          11. Как применяется конструкция using (не директива) при работе с
+          файловыми потоками? Для чего ее используют.
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/5.1.php"
+          >Metanit (Работа с потоковыми классами и файловой системой в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://learn.microsoft.com/en-us/dotnet/api/system.io?view=net-6.0"
+          >System.IO Namespace</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
