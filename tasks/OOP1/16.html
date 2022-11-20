@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР16</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Построение UML диаграмм</div>
+        <div class="header__id">ЛР16</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork16 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-16</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Для проекта (варианты в таблице ниже) спроектируйте типы и их
+        взаимодействие и построите следующие диаграммы UML (изучите спецификацию
+        UML 2.5.): <br />
+        1) Диаграмму вариантов использования с включениями и расширениями<br />
+        2) Диаграмму классов (свойства, методы, уровень доступа)<br />
+        3) Диаграмму последовательности (для одного из вариантов использования,
+        например, заказа, бронирования, модификации и т.п.)<br />
+        4) Диаграмму деятельности (для определенной части)<br />
+        5) Диаграмму компонентов или/и размещения (если можно)<br />
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Общие требования к функциональности проекта: <br />1) Bxoд(sign in) и
+        выxoд(sign out) в/из системы.<br /> 2) Регистрация пользователя.<br /> 3) Просмотр
+        информации (например: просмотр всех курсов, имеющихся кредитных карт,
+        счетов и т.д.)<br /> 4) Удаление информации (например: отмена заказа,
+        медицинского назначения, отказ от курса обучения и т.д.)<br /> 5) Добавление и
+        модификация информации (например: создать и отредактировать курс,
+        создать и отредактировать заказ и т.д.)
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task_switch task__statement">
+        <span class="hljs-keyword">switch</span> (variant) {
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 1:
+      </div>
+      <div class="task__statement task_case_statement">
+        Факультатив. Существует перечень Курсов, за каждым из которых закреплен
+        один Преподаватель. Студент записывается на один или несколько Курсов.
+        По окончании обучения Преподаватель выставляет Студенту и добавляет
+        отзыв.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 2:
+      </div>
+      <div class="task__statement task_case_statement">
+        Платежи. Клиент имеет одну или несколько Кредитных Карт, каждая из
+        которых соответствует некоторому Счету в системе платежей. Клиент может
+        при помощи Счета сделать Платеж, заблокировать Счет и пополнить Счет.
+        Администратор снимает блокировку.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 3:
+      </div>
+      <div class="task__statement task_case_statement">
+        Приемная комиссия. Абитуриент регистрируется на один из Факультетов с
+        фиксированным планом набора, вводит баллы по соответствующим Предметам и
+        аттестату. Результаты Администратором регистрируются в Ведомости.
+        Система подсчитывает сумму баллов и определяет Абитуриентов, зачисленных
+        в учебное заведение.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 4:
+      </div>
+      <div class="task__statement task_case_statement">
+        Библиотека. Читатель имеет возможность осуществлять поиск и заказ Книг в
+        Каталоге. Библиотекарь выдает Читателю Книгу на абонемент или в
+        читальный зал. Книга может присутствовать в Библиотеке в одном или
+        нескольких экземплярах.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 5:
+      </div>
+      <div class="task__statement task_case_statement">
+        Больница. Врач определяет диагноз, делает назначение Пациенту
+        (процедуры, лекарства, операции). Назначение может выполнить Медсестра
+        (процедуры, лекарства) или Врач (любое назначение). Пациент может быть
+        выписан из Больницы, при этом фиксируется окончательный диагноз.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 6:
+      </div>
+      <div class="task__statement task_case_statement">
+        Турагентство. Заказчик выбирает и оплачивает Тур (отдых, экскурсия,
+        шоппинг). Турагент определяет тур как «горящий», размеры скидок
+        постоянным клиентам.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 7:
+      </div>
+      <div class="task__statement task_case_statement">
+        Телефонная станция. Администратор осуществляет подключение Абонентов.
+        Абонент может выбрать одну или несколько из предоставляемых Услуг.
+        Абонент оплачивает Счет за разговоры и Услуги. Администратор может
+        просмотреть список неоплаченных Счетов и заблокировать Абонента.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 8:
+      </div>
+      <div class="task__statement task_case_statement">
+        Автобаза. Диспетчер распределяет Заявки на Рейсы между Водителями, за
+        каждым из которых закреплен свой Автомобиль. На Рейс может быть назначен
+        Автомобиль, находящийся в исправном состоянии и характеристики которого
+        соответствуют Заявке. Водитель делает отметку о выполнении Рейса и
+        состоянии Автомобиля.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 9:
+      </div>
+      <div class="task__statement task_case_statement">
+        Система Интернет-магазин. Администратор осуществляет ведение каталога
+        Товаров. Клиент делает и оплачивает Заказ на Товары. Администратор может
+        занести неплательщиков в “черный список”.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 10:
+      </div>
+      <div class="task__statement task_case_statement">
+        Система Авиакомпания. Авиакомпания имеет список рейсов. Диспетчер
+        формирует летную Бригаду (пилоты, штурман, радист, стюардессы) на Рейс.
+        Администратор управляет списком рейсов.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 11:
+      </div>
+      <div class="task__statement task_case_statement">
+        LowCost-Авиакомпания. Клиент заказывает и оплачивает Билет на Рейс с
+        учетом наличия\отсутствия багажа и права первоочередной регистрации и
+        посадки (Цена Билета может быть ниже стоимости провоза багажа). С
+        приближением даты Рейса или наполнением самолета, цена на Билет может
+        повышаться.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 12:
+      </div>
+      <div class="task__statement task_case_statement">
+        Периодические издания. Администратор осуществляет ведение каталога
+        периодических Изданий. Читатель может оформить Подписку, предварительно
+        выбрав периодические Издания из списка. Система подсчитывает сумму для
+        оплаты и регистрирует Платеж.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 13:
+      </div>
+      <div class="task__statement task_case_statement">
+        Система Заказ гостиницы. Клиент заполняет Заявку, указывая количество
+        мест в номере, класс апартаментов и время пребывания. Администратор
+        просматривает поступившую Заявку, выделяет наиболее подходящий из
+        доступных Номеров, после чего система выставляет Счет Клиенту.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 14:
+      </div>
+      <div class="task__statement task_case_statement">
+        Жилищно-коммунальные услуги. Квартиросъемщик отправляет Заявку, в
+        которой указывает род работ, масштаб, и желаемое время выполнения.
+        Диспетчер формирует соответствующую Бригаду и регистрирует её в Плане
+        работ.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 15:
+      </div>
+      <div class="task__statement task_case_statement">
+        Прокат автомобилей. Клиент выбирает Автомобиль из списка доступных.
+        Заполняет форму Заказа, указывая паспортные данные, срок аренды. Клиент
+        оплачивает Заказ. Администратор регистрирует возврат автомобиля. В
+        случае повреждения Автомобиля, Администратор вносит информацию и
+        выставляет счет за ремонт. Администратор может отклонить Заявку, указав
+        причины отказа
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 16:
+      </div>
+      <div class="task__statement task_case_statement">
+        Тестирование. Тьютор создает Тест из нескольких Вопросов закрытого типа
+        (выбор одного или более вариантов из N предложенных) по определенному
+        Предмету. Студент просматривает список доступных Тестов, отвечает на
+        Вопросы.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 17:
+      </div>
+      <div class="task__statement task_case_statement">
+        Ресторан. Клиент осуществляет заказ из Меню. Администратор подтверждает
+        Заказ и отправляет его на кухню для исполнения. Администратор выставляет
+        Счет. Клиент производит его оплату.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">case</span> 18:
+      </div>
+      <div class="task__statement task_case_statement">
+        Команда разработчиков. Заказчик представляет Техническое Задание (ТЗ), в
+        котором перечислен перечень Работ с указанием квалификации и количества
+        требуемых специалистов. Менеджер рассматривает ТЗ и оформляет Проект,
+        назначая на него незанятых Разработчиков требуемой квалификации, после
+        чего рассчитывается стоимость Проекта и Заказчику выставляется Счет.
+        Разработчик имеет возможность отметить количество часов, затраченных на
+        работу над проектом.
+      </div>
+      <div class="task_case task__statement">
+        <span class="hljs-keyword">break</span>;
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое UML? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Перечислите типы диаграмм UML. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Какие отношения между классами могут быть на диаграмме классов?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Как обозначаются абстрактные классы на диаграмме классов?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. Как обозначаются интерфейсы на диаграмме классов? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Как отображается доступность членов класса на диаграмме классов?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Что такое агрегация? Как обозначается? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Что такое ассоциация? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          9. Какие обозначения используют на диаграмме последовательности?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 10. Для чего нужна диаграмма последовательности? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          11. Каково назначение диаграммы использования, пакетов и активности?
+        </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/patterns/1.2.php"
+          >Metanit (UML в C#)</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a class="task__link" target="_blank" href="https://www.draw.io"
+          >Draw io</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://www.yworks.com/products/yed"
+          >yEd Graph Editor</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://sparxsystems.com/products/ea/"
+          >Enterprise Architect</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://www.microsoft.com/ru-ru/microsoft-365/visio/flowchart-software"
+          >MS Visio</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>

@@ -17,6 +17,7 @@
 [OOP/TASK/13 - Сериализация](https://karpovichmaksim.github.io/tasks/OOP1/13.html)   
 [OOP/TASK/14 - Работа с потоками выполнения](https://karpovichmaksim.github.io/tasks/OOP1/14.html)   
 [OOP/TASK/15 - Платформа параллельных вычислений](https://karpovichmaksim.github.io/tasks/OOP1/15.html)   
+[OOP/TASK/16 - Построение UML диаграмм](https://karpovichmaksim.github.io/tasks/OOP1/16.html)   
 
 #### Лекции
 [OOP/LECTURE/01 - CLR NET](https://karpovichmaksim.github.io/lectures/1_CS_CLR_NET.pdf)   
