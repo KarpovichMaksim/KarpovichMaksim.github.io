@@ -16,6 +16,7 @@
 [OOP/TASK/12 - Работа с потоковыми классами и файловой системой](https://karpovichmaksim.github.io/tasks/OOP1/12.html)   
 [OOP/TASK/13 - Сериализация](https://karpovichmaksim.github.io/tasks/OOP1/13.html)   
 [OOP/TASK/14 - Работа с потоками выполнения](https://karpovichmaksim.github.io/tasks/OOP1/14.html)   
+[OOP/TASK/15 - Платформа параллельных вычислений](https://karpovichmaksim.github.io/tasks/OOP1/15.html)   
 
 #### Лекции
 [OOP/LECTURE/01 - CLR NET](https://karpovichmaksim.github.io/lectures/1_CS_CLR_NET.pdf)   

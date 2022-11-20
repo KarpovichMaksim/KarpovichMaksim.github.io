@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР15</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Платформа параллельных вычислений</div>
+        <div class="header__id">ЛР15</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork15 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-15</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя TPL создайте длительную по времени задачу (на основе Task) на
+        выбор: 
+        <br />
+        a) перемножение матриц, <br />
+        b) умножение вектора размера 100000 на число, <br />
+        c) создание множества Мандельброта, <br />
+        d) другой алгоритм, <br />
+        e) поиск простых чисел (желательно взять «решето Эратосфена»).<br /><br />
+        1) Выведите идентификатор текущей задачи, проверьте во время выполнения
+        – завершена ли задача и выведите ее статус. <br />
+        2) Оцените производительность выполнения используя объект Stopwatch на
+        нескольких прогонах. <br /><br />
+        Дополнительно: <br />
+        Для сравнения реализуйте последовательный алгоритм.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Исследуйте текущий домен вашего приложения: имя, детали конфигурации,
+        все сборки, загруженные в домен. Создайте новый домен. Загрузите туда
+        сборку. Выгрузите домен.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Реализуйте второй вариант этой же задачи с токеном отмены
+        CancellationToken и отмените задачу.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте три задачи с возвратом результата и используйте их для
+        выполнения четвертой задачи. Например, расчет по формуле.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте задачу продолжения (continuation task) в двух вариантах:<br />
+        1) C ContinueWith - планировка на основе завершения множества
+        предшествующих задач<br />
+        2) На основе объекта ожидания и методов GetAwaiter(),GetResult();
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя Класс Parallel распараллельте вычисления циклов For(),
+        ForEach(). Например, на выбор: обработку (преобразования)
+        последовательности, генерация нескольких массивов по 1000000 элементов,
+        быстрая сортировка последовательности, обработка текстов (удаление,
+        замена). Оцените производительность по сравнению с обычными циклами
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя Parallel.Invoke() распараллельте выполнение блока операторов.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя Класс BlockingCollection реализуйте следующую задачу:<br />
+        Есть 5 поставщиков бытовой техники, они завозят уникальные товары на
+        склад (каждый по одному) и 10 покупателей – покупают все подряд, если
+        товара нет - уходят. В вашей задаче: cпрос превышает предложение.
+        Изначально склад пустой. У каждого поставщика свояскорость завоза
+        товара. Каждый раз при изменении состоянии склада выводите наименования
+        товаров на складе.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя async и await организуйте асинхронное выполнение любого
+        метода.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          1. Что такое TPL? Как и для чего используется тип Task
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 2. Почему эффект от распараллеливания наблюдается на большом
+          количестве элементов? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 3. В чем основные достоинства работы с задачами по сравнению с
+          потокми? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 4. Приведите три способа создания и/или запуска Task? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. В каких состояниях может быть поток?Как и для чего используют методы Wait(), WaitAll() и WaitAny()? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Приведите пример синхронного запуска Task?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 7. Как создать задачу с возвратом результата? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Как обработать исключение, если оно произошло при выполнении
+          Task?</span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Что такое CancellationToken и как с его помощью отменить
+          выполнение задач? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 10. Как организовать задачу продолжения (continuation task) ? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 11. Как и для чего используется объект ожидания при создании задач
+          продолжения? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 12. Поясните назначение класса System.Threading.Tasks.Parallel? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 13. Приведите пример задачи с Parallel.For(int, int, Action< int >) </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 14. Приведите пример задачи с Parallel.ForEach </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 15. Приведите пример с Parallel.Invoke() </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 16. Как с использованием CancellationToken отменить параллельные
+          операции? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 17. Для чего используют BlockingCollection< T >, в чем ее особенность? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 18. Как используя async и await организовать асинхронное выполенение
+          метода? </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/12.1.php"
+          >Metanit (Работа с параллельным программированием в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        На складе имеются товары (файл с записями). Создайте три потока -
+        машины, каждая машина имеет свою скорость загрузки/разгрузки. Разгрузите
+        склад. Обеспечьте последовательный доступ складу (только одна машина
+        может загружаться единовременно)<br /><br />
+        Создайте пул ресурсов видеоканалов (класс) которых изначально меньше чем
+        клиентов (класс), которые хотят ими воспользоваться. Каждый клиент
+        получает доступ к каналу, причем пользоваться можно только одним
+        каналом. Если все каналы заняты, то клиент ждет заданное время и по его
+        истечении уходит не получив услуги. (используйте средства синхронизации
+        - семафор)
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
