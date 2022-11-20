@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР14</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Работа с потоками выполнения</div>
+        <div class="header__id">ЛР14</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork14 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-14</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Определите и выведите на консоль/в файл все запущенные процессы:id, имя,
+        приоритет, время запуска, текущее состояние, сколько всего времени
+        использовал процессор и т.д.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Исследуйте текущий домен вашего приложения: имя, детали конфигурации, все сборки,
+загруженные в домен. Создайте новый домен. Загрузите туда сборку. Выгрузите домен.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте в отдельном потоке следующую задачу расчета (можно сделать
+        sleep для задержки) и записи в файл и на консоль простых чисел от 1 до n
+        (задает пользователь). Вызовите методы управления потоком (запуск,
+        приостановка, возобновление и т.д.) Во время выполнения выведите
+        информацию о статусе потока, имени, приоритете, числовой идентификатор и
+        т.д.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте два потока. Первый выводит четные числа, второй нечетные до n и
+        записывают их в общий файл и на консоль. Скорость расчета чисел у
+        потоков – разная.<br />
+        a. Поменяйте приоритет одного из потоков.<br />
+        b. Используя средства синхронизации организуйте работу потоков, таким
+        образом, чтобы:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;1. выводились сначала четные, потом нечетные
+        числа.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;2. последовательно выводились одно четное,
+        другое нечетное.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Придумайте и реализуйте повторяющуюся задачу на основе класса Timer.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое процесс, домен, поток? Как они связаны между собой? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Как получить информацию о процессах?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Как создать и настроить домен?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Как создать и настроить поток?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. В каких состояниях может быть поток? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Какие методы управления потоками вы знаете, для чего и как их
+          использовать?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. Какие приоритеты потока вы знаете?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Что такое пул потоков и для чего он используется? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Что такое критическая секция? Поясните использование. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          10. Что такое мьютекс? Поясните использование
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          11. Что такое семафор? Поясните использование
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 12. Что такое неблокирующие средства синхронизации? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 13. Для чего можно использовать класс Timer? </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/11.1.php"
+          >Metanit (Работа с многопоточностью в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/12.1.php"
+          >Metanit (Работа с параллельным программированием в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        На складе имеются товары (файл с записями). Создайте три потока -
+        машины, каждая машина имеет свою скорость загрузки/разгрузки. Разгрузите
+        склад. Обеспечьте последовательный доступ складу (только одна машина
+        может загружаться единовременно)<br /><br />
+        Создайте пул ресурсов видеоканалов (класс) которых изначально меньше чем
+        клиентов (класс), которые хотят ими воспользоваться. Каждый клиент
+        получает доступ к каналу, причем пользоваться можно только одним
+        каналом. Если все каналы заняты, то клиент ждет заданное время и по его
+        истечении уходит не получив услуги. (используйте средства синхронизации
+        - семафор)
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
