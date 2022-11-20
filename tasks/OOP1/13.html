@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР13</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">Сериализация</div>
+        <div class="header__id">ЛР13</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork13 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-13</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Из лабораторной No4 выберите класс с наследованием и/или
+        композицией/агрегацией для сериализации.<br />
+        Выполните сериализацию/десериализацию объекта используя форматы:<br />
+        a. Binary,<br />
+        b. SOAP,<br />
+        c. JSON,<br />
+        d. XML.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Запретите сериализацию одного из членов вашего класса и
+        продемонстрируйте отсутствие данного элемента в результате работы
+        сериализаторов <br />
+        Все сериализаторы должен реализовывать общий интерфейс. Выбор и
+        использование сериализатора следует реализовать таким образом, чтобы
+        добавление нового сериализатора не требовало изменения существующего
+        кода
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создайте коллекцию (массив) объектов и выполните
+        сериализацию/десериализацию – возможность сохранения и загрузки спсика
+        объектов в/из файла.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя XPath напишите два селектора для вашего XML документа
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Используя Linq to XML (или Linq to JSON) создайте новый xml (json) -
+        документ и напишите несколько запросов.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1. Что такое сериализация, десериализация? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Какие существуют форматы сериализации? Поясните структуру для
+          каждого формата. Какие классы для работы с ними существуют в .NET?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. Какие классы существуют в пространстве имен System.Xml?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          4. Какие атрибуты используются для настройки XML сериализации?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 5. В чем отличие BinaryFormatter или SoapFormatter? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          6. Что такое сериализация контрактов данных, контракт данных?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. Где и для чего используются атрибуты [OnSerializing],
+          [OnSerialized], [OnDeserializing], [OnDeserialized]?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Что такое XPath? Приведите пример. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 9. Какие возможности дает LINQ to Xml. Приведите примеры </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/6.5.php"
+          >Metanit (Работа с JSON в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/tutorial/16.1.php"
+          >Metanit (Работа с XML в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/"
+          >Serialization in .NET</a
+        >
+      </div>
+      <div class="task__statement">
+        Создайте класс CustomSerializer, который обеспечивает сериализацию и
+        десериализацию любых объектов любых типов всеми вышеперечисленными
+        способами. Интерфейс класса и параметры методов продумайте
+        самостоятельно.
+      </div>
+      <div class="task__statement">
+        Создайте клиент и сервер на синхронных сокетах. Нужно сериализованные
+        данные(объект) отправить по сокету и десериализовать на стороне клиента.
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
