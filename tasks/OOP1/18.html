@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ООП: ЛР18</title>
+    <link rel="stylesheet" href="../assets/fonts.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/darcula.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+  </head>
+  <body>
+    <section id="header" class="header">
+      <div class="header__content">
+        <div class="header__subject">
+          Применение структурных и паттернов поведения
+        </div>
+        <div class="header__id">ЛР18</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="task_namespace task__statement">namespace OOP {</div>
+      <div class="task_class task__statement">class LaboratoryWork18 {</div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Создаем на Github репозиторий или папку в следующем репозитории
+        <span class="task__inline-code">oop-18</span>, клонируем его, открываем
+        в IDE
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Добавьте к лабораторной №17-18 два структурных паттерна. Например,
+        паттерн Adapter (не меняем интерфейс исходного класса), Decorator
+        (создайте различные представления объектов - расширенный интерфейс) и
+        т.п. При необходимости добавьте новые функции.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Добавьте три паттерна поведения. Например, Command для выполнения команд
+        приложения (сохранения, поиска, сортировки, генерации, удаления), State
+        (состояние объектов - сохраненный, редактируемый и т.п.), шаблон
+        поведения Memento, который хранит информацию о состоянии объекта вашего
+        типа и восстанавливает его, Observer для контроля определенного значения
+        при вводе (балла, цены и т.п.), Strategy и т.д.
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="task__statement">
+        Синхронизируем локальный репозиторий с удаленным (сделаем push на
+        Github)
+      </div>
+    </section>
+
+    <section class="task task_questions">
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 0. Покажите историю коммитов своего репозитория на Github </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 1.Назначение структурных паттернов? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          2. Нарисуете диаграмму классов и поясните принцип работы паттерна
+          Adapter. В каких случаях надо его применять.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          3. В чем разница между адаптером класса и адаптером объекта?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 4. Назначение и принцип организации паттерна Декоратор. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          5. Нарисуйте диаграмму классов для паттерна Proxy. Поясните его
+          назначение. Какие разновидности proxy вы знаете?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 6. В чем разница между паттернами Decorator и Adapter? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          7. В чем суть паттерна Composite? Поясните в каких случаях его надо
+          применять?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 8. Расскажите о паттерне Façade? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          9. В каких случаях надо применять Bridge? Поясните на диаграмме
+          классов как он применятся
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 10. Назначение паттернов поведения? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          11. Нарисуете диаграмму классов и поясните принцип работы паттерна
+          Chain of responsibility. В каких случаях надо его применять?
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          12. Назначение и принцип организации паттерна Command. Поясните как он
+          связан с конечными автоматами
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 13. Как реализовать паттерн Observer? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          14. Нарисуйте диаграмму классов для паттерна Mediator. Поясните его
+          назначение
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 15. В чем разница между паттернами Mediator и Facade? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 16. В чем суть паттерна Memento? Поясните на примере. </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 17. Расскажите о паттерне Visitor?</span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 18. В каких случаях надо применять Null object? </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span>
+          19. Поясните на диаграмме классов как реализовать Strategy.
+        </span>
+      </div>
+      <div class="task__statement">
+        <input class="task__checkbox" type="checkbox" />
+        <span> 20. Перечислите и поясните принципы проектирования SOLID. </span>
+      </div>
+    </section>
+
+    <section class="task task_extras">
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/patterns/3.1.php"
+          >Metanit (Паттерны поведения в C#)</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://metanit.com/sharp/patterns/4.1.php"
+          >Metanit (Структурные паттерны в C#)</a
+        >
+      </div>
+
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://refactoring.guru/ru/design-patterns/behavioral-patterns"
+          >Поведенческие паттерны проектирования</a
+        >
+      </div>
+      <div class="task__statement">
+        <a
+          class="task__link"
+          target="_blank"
+          href="https://refactoring.guru/ru/design-patterns/structural-patterns"
+          >Структурные паттерны проектирования</a
+        >
+      </div>
+    </section>
+
+    <section class="solution">
+      <pre><code class="javascript"></code></pre>
+    </section>
+
+    <section class="section">
+      <div class="task_class task__statement">}</div>
+      <div class="task_namespace task__statement">}</div>
+    </section>
+
+    <script type="text/javascript" src="../assets/json/third.json"></script>
+    <script src="../assets/jquery-3.2.1.min.js"></script>
+    <script src="../assets/highlight.pack.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
